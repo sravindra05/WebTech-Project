@@ -1,0 +1,29 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: genesis
+  labels:
+    app: genesis
+    target: genesis
+spec:
+  selector:
+    matchLabels:
+      target: genesis
+  replicas: 1
+  template:
+    metadata:
+      labels:
+        target: genesis
+    spec:
+      containers:
+        - name: genesis-core
+          image: altariax0x01/genesis_core
+          imagePullPolicy: Always
+          env:
+            - name: GET_HOSTS_FROM
+              value: dns
+          command: ["python3","./genesis.py"]
+          ports:
+            - containerPort: 80
+      dnsPolicy: ClusterFirst
+      restartPolicy: Always

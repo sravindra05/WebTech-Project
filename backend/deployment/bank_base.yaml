@@ -1,0 +1,26 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: bank-base
+  labels:
+    app: bank-base
+    target: bank-base
+spec:
+  selector:
+    matchLabels:
+      target: bank-base
+  replicas: 1
+  template:
+    metadata:
+      labels:
+        target: bank-base
+    spec:
+      containers:
+        - name: bank-base-core
+          image: mongo
+          imagePullPolicy: Always
+          ports:
+            - containerPort: 80
+            - containerPort: 27017
+      dnsPolicy: ClusterFirst
+      restartPolicy: Always

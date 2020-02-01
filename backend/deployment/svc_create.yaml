@@ -1,0 +1,59 @@
+---
+
+apiVersion: v1
+kind: Service
+metadata:
+  name: genesis
+spec:
+  ports:
+  - name: web
+    port: 80
+    targetPort: 80
+  selector:
+    target: genesis
+  type: LoadBalancer
+---
+
+apiVersion: v1
+kind: Service
+metadata:
+  name: bank
+spec:
+  ports:
+  - name: web
+    port: 80
+    targetPort: 80
+  selector:
+    target: bank
+  type: LoadBalancer
+
+---
+
+apiVersion: v1
+kind: Service
+metadata:
+  name: mongo-auth
+spec:
+  ports:
+  - name: normal
+    port: 27017
+    targetPort: 27017
+  selector:
+    target: auth-base
+  type: LoadBalancer
+
+---
+
+apiVersion: v1
+kind: Service
+metadata:
+  name: mongo-bank
+spec:
+  ports:
+  - name: normal
+    port: 27017
+    targetPort: 27017
+  selector:
+    target: bank-base
+  type: LoadBalancer
+

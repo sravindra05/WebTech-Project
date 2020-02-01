@@ -1,0 +1,29 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: bank
+  labels:
+    app: bank
+    target: bank
+spec:
+  selector:
+    matchLabels:
+      target: bank
+  replicas: 1
+  template:
+    metadata:
+      labels:
+        target: bank
+    spec:
+      containers:
+        - name: bank-core
+          image: altariax0x01/bank_core
+          imagePullPolicy: Always
+          env:
+            - name: GET_HOSTS_FROM
+              value: dns
+          command: ["python3","./server.py"]
+          ports:
+            - containerPort: 80
+      dnsPolicy: ClusterFirst
+      restartPolicy: Always
