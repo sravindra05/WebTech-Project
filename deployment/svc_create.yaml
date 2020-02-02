@@ -3,28 +3,28 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: genesis
+  name: auth
 spec:
   ports:
   - name: web
     port: 80
     targetPort: 80
   selector:
-    target: genesis
+    target: auth
   type: LoadBalancer
 ---
 
 apiVersion: v1
 kind: Service
 metadata:
-  name: bank
+  name: classifier
 spec:
   ports:
   - name: web
     port: 80
     targetPort: 80
   selector:
-    target: bank
+    target: classifier
   type: LoadBalancer
 
 ---
@@ -32,14 +32,14 @@ spec:
 apiVersion: v1
 kind: Service
 metadata:
-  name: mongo-auth
+  name: mongo-data
 spec:
   ports:
   - name: normal
     port: 27017
     targetPort: 27017
   selector:
-    target: auth-base
+    target: mongo-data
   type: LoadBalancer
 
 ---
@@ -47,13 +47,13 @@ spec:
 apiVersion: v1
 kind: Service
 metadata:
-  name: mongo-bank
+  name: eda
 spec:
   ports:
-  - name: normal
-    port: 27017
-    targetPort: 27017
+  - name: web
+    port: 80
+    targetPort: 80
   selector:
-    target: bank-base
+    target: eda
   type: LoadBalancer
 

@@ -1,0 +1,29 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: auth
+  labels:
+    app: auth
+    target: auth
+spec:
+  selector:
+    matchLabels:
+      target: auth
+  replicas: 1
+  template:
+    metadata:
+      labels:
+        target: auth
+    spec:
+      containers:
+        - name: container
+          image: auth
+          imagePullPolicy: Always
+          env:
+            - name: GET_HOSTS_FROM
+              value: dns
+          command: ["python3","./auth.py"]
+          ports:
+            - containerPort: 80
+      dnsPolicy: ClusterFirst
+      restartPolicy: Always

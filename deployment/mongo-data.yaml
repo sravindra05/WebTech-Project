@@ -1,29 +1,26 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: genesis
+  name: mongo-data
   labels:
-    app: genesis
-    target: genesis
+    app: mongo-data
+    target: mongo-data
 spec:
   selector:
     matchLabels:
-      target: genesis
+      target: mongo-data
   replicas: 1
   template:
     metadata:
       labels:
-        target: genesis
+        target: mongo-data
     spec:
       containers:
-        - name: genesis-core
-          image: altariax0x01/genesis_core
+        - name: container
+          image: mongo
           imagePullPolicy: Always
-          env:
-            - name: GET_HOSTS_FROM
-              value: dns
-          command: ["python3","./genesis.py"]
           ports:
+            - containerPort: 27017
             - containerPort: 80
       dnsPolicy: ClusterFirst
       restartPolicy: Always

@@ -1,26 +1,29 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: auth-base
+  name: classifier
   labels:
-    app: auth-base
-    target: auth-base
+    app: classifier
+    target: classifier
 spec:
   selector:
     matchLabels:
-      target: auth-base
+      target: classifier
   replicas: 1
   template:
     metadata:
       labels:
-        target: auth-base
+        target: classifier
     spec:
       containers:
-        - name: auth-base-core
-          image: mongo
+        - name: classifier
+          image: classifier
           imagePullPolicy: Always
+          env:
+            - name: GET_HOSTS_FROM
+              value: dns
+          command: ["python3","./bin_class.py"]
           ports:
-            - containerPort: 27017
             - containerPort: 80
       dnsPolicy: ClusterFirst
       restartPolicy: Always

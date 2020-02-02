@@ -112,3 +112,6 @@ def get_file_list():
         if (auth == 1):
                 #non existent user
                 return status.HTTP_403_FORBIDDEN
+
+if __name__ == '__main__':
+        app.run(port = 8080)
