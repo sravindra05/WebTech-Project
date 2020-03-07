@@ -5,32 +5,39 @@ import requests
 import pymongo
 from datetime import date
 import json
+import hashlib
 
 app = flask.Flask(__name__)
-CORS(app)
-mongo_url = "mongodb://mongo-data:27017/"
-@app.route("/uac/api/v1/login", methods=["POST"])
+CORS(app,supports_credentials=True)
+#mongo_url = "mongodb://mongo-data:27017/"
+mongo_url = "mongodb://localhost:27017/"
+@app.route("/api/uac/v1/login", methods=["POST"])
 #user doesn't exist 403 forbidden
 #valid 202 accepted
 #invalid password 401 unauthorised
+#bad request 400
 def login():
         myclient = pymongo.MongoClient(mongo_url)
         db = myclient["auth_db"]
         user_data = db["data"]
-        query = {"username":flask.request.json["username"],"password":flask.request.json["password"]}
+        if ((flask.request.form['password'] == hashlib.md5(b'').hexdigest()) or (flask.request.form['username'] == "")):
+                return flask.Response(status=status.HTTP_400_BAD_REQUEST)
+
+        query = {"username":flask.request.form["username"]}
         document = user_data.find(query)
-        if (len(document) == 0):
-                return status.HTTP_403_FORBIDDEN
-        else:
-                for x in document:
-                        if (x['password'] == flask.request.json["password"]):
-                                #valid
-                                resp  = make_response()
-                                resp.set_cookie("username",flask.request.json["username"])
-                                resp.set_cookie("loginstring",flask.request.json["password"])
-                                return resp, 201
-                        else:
-                                return status.HTTP_401_UNAUTHORIZED
+        count = 0
+        for x in document:
+                count += 1
+                if (x['password'] == flask.request.form["password"]):
+                        #valid
+                        resp  = flask.make_response()
+                        resp.set_cookie("username",flask.request.form["username"])
+                        resp.set_cookie("loginstring",flask.request.form["password"])
+                        return resp,202
+                else:
+                        return flask.Response(status=status.HTTP_401_UNAUTHORIZED)
+        if (count == 0):
+                return flask.Response(status=status.HTTP_403_FORBIDDEN)
 
 @app.route("/uac/api/v1/check", methods=["POST"])
 # user doesn't exist 403 forbidden
@@ -42,18 +49,19 @@ def check_login():
         user_data = db["data"]
         query = {"username":flask.request.cookies["username"]}
         document = user_data.find(query)
-        if (len(document) == 0):
-                return status.HTTP_403_FORBIDDEN
-        else:
-                for x in document:
-                        if (x['loginstring'] == flask.request.cookies['loginstring']):
-                                #valid
-                                return status.HTTP_202_ACCEPTED
-                        else:
-                                return status.HTTP_401_UNAUTHORIZED
+        count = 0        
+        for x in document:
+                count += 1
+                if (x['loginstring'] == flask.request.cookies['loginstring']):
+                        #valid
+                        return flask.Response(status=status.HTTP_202_ACCEPTED)
+                else:
+                        return flask.Response(status=status.HTTP_401_UNAUTHORIZED)
+        if (count == 0):
+                return flask.Response(status=status.HTTP_403_FORBIDDEN)
 
 
-@app.route("/uac/api/v1/signup", methods=["POST"])
+@app.route("/api/uac/v1/signup", methods=["POST"])
 # user exists 403 forbidden
 # valid 202 accepted
 # invalid password 400 bad request
@@ -61,14 +69,22 @@ def signup():
         myclient = pymongo.MongoClient(mongo_url)
         db = myclient["auth_db"]
         user_data = db["data"]
-        if (len(flask.request.json['password']) == 0):
-                return status.HTTP_400_BAD_REQUEST
+        
+        if ((flask.request.form['password'] == hashlib.md5(b'').hexdigest()) or (flask.request.form['username'] == "")):
+                return flask.Response(status=status.HTTP_400_BAD_REQUEST)
 
-        query = {"username":flask.request.json["username"]}
+        query = {"username":flask.request.form["username"]}
         document = user_data.find(query)
-        if (len(document) > 0):
-                return status.HTTP_403_FORBIDDEN
+        count = 0
+        for _ in document:
+                count += 1
+        if (count !=0):
+                return flask.Response(status=status.HTTP_403_FORBIDDEN)
         else:
-                query = {"username":flask.request.json["username"],"password":flask.request.json["password"]}
+                query = {"username":flask.request.form["username"],"password":flask.request.form["password"]}
                 document = user_data.insert_one(query)
-                return status.HTTP_202_ACCEPTED
+                return flask.Response(status=status.HTTP_202_ACCEPTED)
+
+if (__name__ == "__main__"):
+        app.run(port=4000)
+        

@@ -21,12 +21,12 @@ class LandingNav extends React.Component {
             <ul id="nav-mobile" className="right hide-on-med-and-down">
               <li>
                 <a className="waves-effect waves-light btn green" href="#">
-                  <NavLink to="/ln" exact>
+                  <NavLink to="/login" exact>
                     Login
                   </NavLink>
                 </a>
                 <a className="waves-effect waves-light btn green" href="#">
-                  <NavLink to="/sn" exact>
+                  <NavLink to="/signup" exact>
                     Sign-up
                   </NavLink>
                 </a>

@@ -10,6 +10,35 @@ class SignUpForm extends React.Component {
     M.AutoInit();
   }
   render() {
+    var url = "http://localhost:4000"
+    function attempt_signup(){
+      var md5 = require('../../../node_modules/md5');
+      var sender_object = {
+        xhr: new XMLHttpRequest(),
+        send:function(){
+          this.xhr.open("POST",url+"/api/uac/v1/signup",true);
+          this.xhr.onreadystatechange = this.callback;
+          let data = new FormData();
+          data.append("username",document.getElementById("username").value);
+          data.append("password",md5(document.getElementById("password").value));
+          this.xhr.send(data);
+        },
+        callback:function(){
+          if (this.readyState == 4){
+            if (this.status == 202){
+              alert("Successful signup")
+            }
+          if (this.status == 403){
+            alert("Error User found");
+          }
+          if(this.status == 400){
+            alert("Please fill data");
+          }
+          }
+        }
+      }
+      sender_object.send()
+    }
     return (
       <>
         <main className="valign-wrapper">
@@ -21,7 +50,7 @@ class SignUpForm extends React.Component {
                   className="validate"
                   type="text"
                   name="username"
-                  id="email"
+                  id="username"
                   required
                 />
                 <label for="email">Username</label>
@@ -37,7 +66,7 @@ class SignUpForm extends React.Component {
                 />
                 <label for="password">Password</label>
               </div>
-              <button className="btn btn-small green waves-effect">
+              <button className="btn btn-small green waves-effect" onClick={attempt_signup}>
                 SignUp
               </button>
             </div>
