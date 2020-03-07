@@ -19,6 +19,10 @@ import UploadForm from "./components/forms/UploadForm";
 import Footer from "./components/Footer";
 import Intro from "./components/Intro";
 import Tbd from "./components/Tbd";
+import DashBoard from "./components/DashBoard";
+import DashNav from "./components/navs/DashNav";
+import SignUpNav from "./components/navs/SignUpNav";
+import Logout from "./components/Logout";
 import M from "materialize-css";
 //==============================================================
 class App extends React.Component {
@@ -42,8 +46,22 @@ class App extends React.Component {
           </Route>
           <Route path="/signup" exact>
             <>
-              <Nav />
+              <SignUpNav />
               <SignUpForm />
+              <Footer />
+            </>
+          </Route>
+          <Route path="/dashboard" exact>
+            <>
+              <DashNav />
+              <DashBoard/>
+              <Footer />
+            </>
+          </Route>
+          <Route path="/logout" exact>
+            <>
+              <Nav />
+              <Logout/>
               <Footer />
             </>
           </Route>
