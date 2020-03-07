@@ -30,7 +30,8 @@ class LoginForm extends React.Component {
         callback:function(){
           if (this.readyState == 4){
             if (this.status == 202){
-              alert("Successful login")
+              alert("Successful login");
+              window.location.href = "/dashboard";
               }
           
           if (this.status == 403){
@@ -45,7 +46,7 @@ class LoginForm extends React.Component {
           }
         }
       }
-      sender_object.send()
+      sender_object.send();
     }
     return (
       <>
