@@ -10,6 +10,46 @@ class LoginForm extends React.Component {
   componentDidMount() {
     // Auto initialize all the things!
     M.AutoInit();
+    var url = "http://localhost:4000"
+    function check_login_state(){
+      var sender_object = {
+        xhr: new XMLHttpRequest(),
+        send:function(){
+          this.xhr.open("POST",url+"/api/uac/v1/check",true);
+          this.xhr.onreadystatechange = this.callback;
+          this.xhr.withCredentials = true;
+          this.xhr.send();
+        },
+        callback:function(){
+          if (this.readyState == 4){
+            if (this.status == 202){
+              alert("You are already logged in");
+              window.location.href = "/dashboard";
+            }
+            if (this.status == 403){
+              alert("User not found");
+              document.cookie = "username=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;";
+              document.cookie = "loginstring=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;";
+              window.location.href="/login";
+            }
+            if(this.status == 401){
+              alert("Unauthorized, incorrect password");
+              document.cookie = "username=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;";
+              document.cookie = "loginstring=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;";
+              window.location.href="/login";
+            }
+            if (this.status == 204){
+              //not yet logged in. no problem.
+              document.cookie = "username=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;";
+              document.cookie = "loginstring=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;";
+              console.log("Please login");
+            }
+          }
+        }
+      }
+      sender_object.send();
+    }
+    check_login_state();
   }
   render() {
     var url = "http://localhost:4000"

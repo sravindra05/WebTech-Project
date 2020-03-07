@@ -39,7 +39,7 @@ def login():
         if (count == 0):
                 return flask.Response(status=status.HTTP_403_FORBIDDEN)
 
-@app.route("/uac/api/v1/check", methods=["POST"])
+@app.route("/api/uac/v1/check", methods=["POST"])
 # user doesn't exist 403 forbidden
 # valid loginstring 202 accepted
 # invalid login 401 unauthorized
@@ -47,12 +47,16 @@ def check_login():
         myclient = pymongo.MongoClient(mongo_url)
         db = myclient["auth_db"]
         user_data = db["data"]
+        if ('loginstring' not in flask.request.cookies or 'username' not in flask.request.cookies):
+                return flask.Response(status=status.HTTP_204_NO_CONTENT)
+        if ((flask.request.cookies['loginstring'] == hashlib.md5(b'').hexdigest()) or (flask.request.cookies['username'] == "")):
+                return flask.Response(status=status.HTTP_204_NO_CONTENT)
         query = {"username":flask.request.cookies["username"]}
         document = user_data.find(query)
         count = 0        
         for x in document:
                 count += 1
-                if (x['loginstring'] == flask.request.cookies['loginstring']):
+                if (x['password'] == flask.request.cookies['loginstring']):
                         #valid
                         return flask.Response(status=status.HTTP_202_ACCEPTED)
                 else:
