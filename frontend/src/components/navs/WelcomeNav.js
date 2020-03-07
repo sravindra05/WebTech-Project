@@ -21,10 +21,13 @@ class WelcomeNav extends React.Component {
           <ul id="nav-mobile" className="right hide-on-med-and-down">
             <li>
               <a className="waves-effect waves-light btn" href="#">
-                <NavLink to="/:userid/graph">Plot</NavLink>
+                <NavLink to="/dashboard">Return to Dash</NavLink>
               </a>
               <a className="waves-effect waves-light btn" href="#">
-                <NavLink to="/:userid/train">Train</NavLink>
+                <NavLink to="/:fileid/graph">Plot</NavLink>
+              </a>
+              <a className="waves-effect waves-light btn" href="#">
+                <NavLink to="/:fileid/train">Train</NavLink>
               </a>
             </li>
           </ul>

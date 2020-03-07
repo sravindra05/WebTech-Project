@@ -65,19 +65,19 @@ class App extends React.Component {
               <Footer />
             </>
           </Route>
-          <Route path="/:userid/upload" exact>
+          <Route path="/upload" exact>
             <>
               <WelcomeNav />
               <UploadForm />
               <Footer />
             </>
           </Route>
-          <Route path="/:userid/graph" exact>
+          <Route path="/:fileid/graph" exact>
             <>
               <Tbd />
             </>
           </Route>
-          <Route path="/:userid/train" exact>
+          <Route path="/:fileid/train" exact>
             <>
               <Tbd />
             </>

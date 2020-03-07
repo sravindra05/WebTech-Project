@@ -4,8 +4,12 @@ import "materialize-css/dist/css/materialize.min.css";
 import { NavLink } from "react-router-dom";
 
 class DashBoard extends React.Component {
+  
   componentDidMount(){
     var url = "http://localhost:4000"
+    function load_table(){
+
+    }
     function check_login_state(){
       var sender_object = {
         xhr: new XMLHttpRequest(),
@@ -19,6 +23,8 @@ class DashBoard extends React.Component {
           if (this.readyState == 4){
             if (this.status == 202){
               //no problems
+              document.getElementById("main").style={};
+              load_table();
             }
             if (this.status == 403){
               alert("Error");
@@ -50,7 +56,7 @@ class DashBoard extends React.Component {
   render() {
     return (
       <>
-        <main>
+        <main id="main" style={{display:"none"}}>
           <h3 className="center">Yet to be Done</h3>
           <a className="btn green">
             <NavLink to="/upload">
