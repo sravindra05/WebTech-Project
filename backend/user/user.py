@@ -7,6 +7,7 @@ from datetime import date
 import json
 
 app = flask.Flask(__name__)
+app.config['UPLOAD_FOLDER'] = './uploaded_files/'
 CORS(app,supports_credentials=True)
 #mongo_url = "mongodb://mongo-data:27017/"
 mongo_url = "mongodb://localhost:27017/"
@@ -21,20 +22,21 @@ def newfile():
         query = {"filename":filename}
         document = user_data.find(query)
         count = 0
-        for x in document:
+        for _ in document:
                 #file exists
                 return flask.Response(status=status.HTTP_409_CONFLICT)
         if (count == 0):
                 #no files exist
-                console.log(flask.request.files)
                 data =''
-                with open(filename,'r') as datafile:
+                print("FILES:",flask.request.files)
+                flask.request.files['file_itself'].save(app.config['UPLOAD_FOLDER']+filename)
+                with open(app.config['UPLOAD_FOLDER']+filename,'r') as datafile:
                         data = datafile.read()
-                query = {"username":flask.request.cookies["username"],"filename":filename,"file_data":flask.request.files[filename]}
+                query = {"username":flask.request.cookies["username"],"filename":filename,"file_data":data,"file_size":len(data)}
                 document = user_data.insert_one(query)
                 return flask.Response(status=status.HTTP_200_OK)
 
-@app.route("/api/user/v1/get_file_list", methods=["POST"])
+@app.route("/api/user/v1/get_file_list", methods=["GET"])
 #200 - send data
 #204 - no data
 def get_file_list():
@@ -42,7 +44,7 @@ def get_file_list():
         db = myclient["data_db"]
         user_data = db["data"]
         query = {"username":flask.request.cookies["username"]}
-        document = user_data.find(query)
+        document = user_data.find(query,{"_id":0,"file_data":0})
         count = 0
         file_list = []
         for x in document:
@@ -61,7 +63,7 @@ def delete_file():
         db = myclient["data_db"]
         user_data = db["data"]
         query = {"username":flask.request.cookies["username"],"filename":flask.request.form["filename"]}
-        document = user_data.delete_one(query)
+        user_data.delete_one(query)
         return flask.Response(status = status.HTTP_200_OK)
         
 if (__name__ == "__main__"):
