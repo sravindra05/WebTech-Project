@@ -8,6 +8,19 @@ class DashBoard extends React.Component {
   
   componentDidMount(){
     var url = "http://localhost:4000"
+    function delete_file(file_to_delete){
+      let url = "http://localhost:5000"
+      //console.log(file_to_delete.target.id);
+      gen_request("DELETE",url+"/api/user/v1/delete_file/"+file_to_delete.target.id,5000,{},after_delete);
+      function after_delete(){
+        if (this.readyState == 4){
+          if (this.status == 200){
+            alert("File deleted successfully");
+            window.location.reload();
+          }
+        }
+      }
+    }
     function load_table(){
       let url = "http://localhost:5000"
       gen_request("GET",url+"/api/user/v1/get_file_list",5000,{},callback);
@@ -29,7 +42,7 @@ class DashBoard extends React.Component {
               let newdelete = document.createElement('a');newdelete.className="btn white-text red";newdelete.style="display: inline-block;float:right";
               newplot.innerText = "Plot";
               newlearn.innerText="Learn";
-              newdelete.innerText = "Delete";
+              newdelete.innerText = "Delete";newdelete.id = data[key]['filename'];newdelete.onclick=delete_file;
               newdiv.appendChild(newp);
               newdiv.appendChild(newdelete);
               newdiv.appendChild(newlearn);
@@ -84,6 +97,7 @@ class DashBoard extends React.Component {
     check_login_state();
   }
   render() {
+    
     return (
       <>
         <main id="main" style={{display:"none"}}>

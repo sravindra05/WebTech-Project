@@ -56,13 +56,13 @@ def get_file_list():
                 return json.dumps(file_list)
 
 
-@app.route("/api/user/v1/delete_file", methods=["POST"])
+@app.route("/api/user/v1/delete_file/<string:filename>", methods=["DELETE"])
 #200 OK
-def delete_file():
+def delete_file(filename):
         myclient = pymongo.MongoClient(mongo_url)
         db = myclient["data_db"]
         user_data = db["data"]
-        query = {"username":flask.request.cookies["username"],"filename":flask.request.form["filename"]}
+        query = {"username":flask.request.cookies["username"],"filename":filename}
         user_data.delete_one(query)
         return flask.Response(status = status.HTTP_200_OK)
         
