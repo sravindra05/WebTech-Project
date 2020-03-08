@@ -72,12 +72,12 @@ class App extends React.Component {
               <Footer />
             </>
           </Route>
-          <Route path="/:fileid/graph" exact>
+          <Route path="/graph/:fileid" exact>
             <>
               <Tbd />
             </>
           </Route>
-          <Route path="/:fileid/train" exact>
+          <Route path="/train/:fileid" exact>
             <>
               <Tbd />
             </>
