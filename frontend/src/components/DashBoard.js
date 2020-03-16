@@ -7,12 +7,16 @@ import gen_request from "../libfx/gen_request";
 class DashBoard extends React.Component {
   componentDidMount() {
     var url = "http://localhost:4000";
+    function view_file(file_to_view) {
+      console.log(file_to_view.target.target);
+      window.location.href = "/view/"+file_to_view.target.target;
+    }
     function delete_file(file_to_delete) {
       let url = "http://localhost:5000";
       //console.log(file_to_delete.target.id);
       gen_request(
         "DELETE",
-        url + "/api/user/v1/delete_file/" + file_to_delete.target.id,
+        url + "/api/user/v1/delete_file/" + file_to_delete.target.target,
         5000,
         {},
         after_delete
@@ -38,8 +42,9 @@ class DashBoard extends React.Component {
       function callback() {
         if (this.readyState == 4) {
           if (this.status == 204) {
-            document.getElementById("file_list").innerHTML =
-              "<p>You currently have no life and no files";
+            let newp = document.createElement("p");
+            newp.innerHTML = "You have no files";
+            document.getElementById("file_list").appendChild(newp);
           }
           if (this.status == 200) {
             let data = JSON.parse(this.response);
@@ -57,19 +62,28 @@ class DashBoard extends React.Component {
               let newlearn = document.createElement("a");
               newlearn.className = "btn white-text pink";
               newlearn.style = "display: inline-block;float:right";
+              let newview = document.createElement("a");
+              newview.className = "btn white-text green";
+              newview.style = "display: inline-block;float:right";
+              newview.target = data[key]["filename"];
               let newdelete = document.createElement("a");
               newdelete.className = "btn white-text red";
               newdelete.style = "display: inline-block;float:right";
+              newdelete.target = data[key]["filename"];
               newplot.innerText = "Plot";
               newlearn.innerText = "Learn";
               newdelete.innerText = "Delete";
+              newview.innerText = "View";
+              newview.onclick = view_file;
               newdelete.id = data[key]["filename"];
               newdelete.onclick = delete_file;
               newdiv.appendChild(newp);
               newdiv.appendChild(newdelete);
+              newdiv.appendChild(newview);
               newdiv.appendChild(newlearn);
               newdiv.appendChild(newplot);
-              div.insertBefore(newdiv, document.getElementById("unf"));
+              div.insertBefore(newdiv, document.getElementById("uploadbtn"));
+              
             }
           }
         }
@@ -131,7 +145,7 @@ class DashBoard extends React.Component {
           <h3 className="center">Dashboard</h3>
           <div className="container">
             <div className="row" id="file_list">
-              <div id="unf" className="col s12 center">
+              <div id="uploadbtn" className="col s12 center">
                 <a className="btn green">
                   <NavLink to="/upload" className="white-text">
                     Upload New File
