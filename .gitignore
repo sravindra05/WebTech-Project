@@ -1,3 +1,4 @@
 node_modules/
 .vscode/
 uploaded_files/
+package-lock.json

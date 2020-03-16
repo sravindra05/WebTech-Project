@@ -23,6 +23,7 @@ import DashBoard from "./components/DashBoard";
 import DashNav from "./components/navs/DashNav";
 import SignUpNav from "./components/navs/SignUpNav";
 import Logout from "./components/Logout";
+import View from "./components/View";
 import M from "materialize-css";
 //==============================================================
 class App extends React.Component {
@@ -75,6 +76,11 @@ class App extends React.Component {
           <Route path="/graph/:fileid" exact>
             <>
               <Tbd />
+            </>
+          </Route>
+          <Route path="/view/:fileid" exact>
+            <>
+              <View />
             </>
           </Route>
           <Route path="/train/:fileid" exact>
