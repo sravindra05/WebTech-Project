@@ -54,36 +54,44 @@ class DashBoard extends React.Component {
               newdiv.className = "col s12";
               let newp = document.createElement("p");
               newp.style = "display: inline-block";
-              newp.innerText =
-                data[key]["filename"] + " File Size: " + data[key]["file_size"];
+              newp.innerText = data[key]["filename"] + " File Size: " + data[key]["file_size"];
+              
               let newplot = document.createElement("a");
               newplot.className = "btn white-text blue";
               newplot.style = "display: inline-block;float:right";
+              newplot.innerText = "Plot";
+              newview.target = data[key]["filename"];
+              newplot.onclick = null;
+
               let newlearn = document.createElement("a");
               newlearn.className = "btn white-text pink";
               newlearn.style = "display: inline-block;float:right";
+              newlearn.innerText = "Learn";
+              newview.target = data[key]["filename"];
+              newlearn.onclick = null;
+              
               let newview = document.createElement("a");
               newview.className = "btn white-text green";
               newview.style = "display: inline-block;float:right";
               newview.target = data[key]["filename"];
+              newview.innerText = "View";
+              newview.onclick = view_file;
+             
               let newdelete = document.createElement("a");
               newdelete.className = "btn white-text red";
               newdelete.style = "display: inline-block;float:right";
               newdelete.target = data[key]["filename"];
-              newplot.innerText = "Plot";
-              newlearn.innerText = "Learn";
               newdelete.innerText = "Delete";
-              newview.innerText = "View";
-              newview.onclick = view_file;
-              newdelete.id = data[key]["filename"];
+              newdelete.target = data[key]["filename"];
               newdelete.onclick = delete_file;
+
               newdiv.appendChild(newp);
               newdiv.appendChild(newdelete);
               newdiv.appendChild(newview);
               newdiv.appendChild(newlearn);
               newdiv.appendChild(newplot);
+
               div.insertBefore(newdiv, document.getElementById("uploadbtn"));
-              
             }
           }
         }
