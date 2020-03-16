@@ -60,14 +60,14 @@ class DashBoard extends React.Component {
               newplot.className = "btn white-text blue";
               newplot.style = "display: inline-block;float:right";
               newplot.innerText = "Plot";
-              newview.target = data[key]["filename"];
+              newplot.target = data[key]["filename"];
               newplot.onclick = null;
 
               let newlearn = document.createElement("a");
               newlearn.className = "btn white-text pink";
               newlearn.style = "display: inline-block;float:right";
               newlearn.innerText = "Learn";
-              newview.target = data[key]["filename"];
+              newlearn.target = data[key]["filename"];
               newlearn.onclick = null;
               
               let newview = document.createElement("a");
