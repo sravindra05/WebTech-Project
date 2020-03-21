@@ -16,6 +16,7 @@ import WelcomeNav from "./components/navs/WelcomeNav";
 import LoginForm from "./components/forms/LoginForm";
 import SignUpForm from "./components/forms/SignupForm";
 import UploadForm from "./components/forms/UploadForm";
+import TrainPage from "./pages/Training";
 import Footer from "./components/Footer";
 import Intro from "./components/Intro";
 import Tbd from "./components/Tbd";
@@ -55,14 +56,14 @@ class App extends React.Component {
           <Route path="/dashboard" exact>
             <>
               <DashNav />
-              <DashBoard/>
+              <DashBoard />
               <Footer />
             </>
           </Route>
           <Route path="/logout" exact>
             <>
               <Nav />
-              <Logout/>
+              <Logout />
               <Footer />
             </>
           </Route>
@@ -83,11 +84,7 @@ class App extends React.Component {
               <View />
             </>
           </Route>
-          <Route path="/train/:fileid" exact>
-            <>
-              <Tbd />
-            </>
-          </Route>
+          <Route path="/train/:filename" component={TrainPage} exact></Route>
           <Redirect to="/" />
         </Switch>
       </Router>

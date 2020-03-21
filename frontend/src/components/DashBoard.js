@@ -9,7 +9,7 @@ class DashBoard extends React.Component {
     var url = "http://localhost:4000";
     function view_file(file_to_view) {
       console.log(file_to_view.target.target);
-      window.location.href = "/view/"+file_to_view.target.target;
+      window.location.href = "/view/" + file_to_view.target.target;
     }
     function delete_file(file_to_delete) {
       let url = "http://localhost:5000";
@@ -54,8 +54,9 @@ class DashBoard extends React.Component {
               newdiv.className = "col s12";
               let newp = document.createElement("p");
               newp.style = "display: inline-block";
-              newp.innerText = data[key]["filename"] + " File Size: " + data[key]["file_size"];
-              
+              newp.innerText =
+                data[key]["filename"] + " File Size: " + data[key]["file_size"];
+
               let newplot = document.createElement("a");
               newplot.className = "btn white-text blue";
               newplot.style = "display: inline-block;float:right";
@@ -68,15 +69,14 @@ class DashBoard extends React.Component {
               newlearn.style = "display: inline-block;float:right";
               newlearn.innerText = "Learn";
               newlearn.target = data[key]["filename"];
-              newlearn.onclick = null;
-              
+              newlearn.href = "/train/" + data[key]["filename"];
+
               let newview = document.createElement("a");
               newview.className = "btn white-text green";
               newview.style = "display: inline-block;float:right";
               newview.target = data[key]["filename"];
               newview.innerText = "View";
-              newview.onclick = view_file;
-             
+
               let newdelete = document.createElement("a");
               newdelete.className = "btn white-text red";
               newdelete.style = "display: inline-block;float:right";
