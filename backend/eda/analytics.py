@@ -22,28 +22,31 @@ def get_file_data(username,filename):
                 count += 1
                 file_data = x['file_data']
         if (count != 0):
-                return file_data
+                return file_data #returns a string
         else:
                 return 0
 
-@app.route("/api/eda/v1/get_simple_line_graph/<string:filename>",methods=["GET"])
+def get_fields(file_data,fieldlist):
+        # fieldlist is a list containing indices of fields to be extracted
+        data = dict()
+        for item in fieldlist:
+                data[item] = []
+                for line in file_data:
+                        data[item].append(line.split(",")[data[item]])
+        return data
+
+@app.route("/api/eda/v1/get_scatter/<filename>",methods=["GET"])
 #file doesn't exist 406 not acceptable
 #valid 200
-def get_simple_line_graph(filename):
+def get_scatter(filename):
         data = flask.request.json
-        start = data['rangestart']
-        end = data['rangeend']
         file_data = get_file_data(flask.request.cookies["username"],filename)
         if (file_data == 0):
                 return status.HTTP_406_NOT_ACCEPTABLE
         else:
-                x_axes = []
-                y_axes = []
                 file_data = file_data.split("\n")
-                for item in file_data:
-                        x_axes.append(item.split(",")[data["index_a"]])
-                        y_axes.append(item.split(",")[data["index_b"]])
-                return {"x":x_axes,"y":y_axes}, 200
+                dpoints = get_fields(file_data,[data["x"],data['y'],data['target']])
+                return {"x":dpoints[0],"y":dpoints[1],"target":dpoints[2]}, 200
 
 @app.route("/api/eda/v1/gen_view/<filename>",methods=["GET"])
 #file doesn't exist 406 not acceptable
