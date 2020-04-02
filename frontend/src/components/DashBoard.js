@@ -62,6 +62,7 @@ class DashBoard extends React.Component {
               newplot.style = "display: inline-block;float:right";
               newplot.innerText = "Plot";
               newplot.target = data[key]["filename"];
+              newplot.href = "/plot/" + data[key]["filename"];
               newplot.onclick = null;
 
               let newlearn = document.createElement("a");

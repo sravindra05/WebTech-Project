@@ -17,6 +17,7 @@ import LoginForm from "./components/forms/LoginForm";
 import SignUpForm from "./components/forms/SignupForm";
 import UploadForm from "./components/forms/UploadForm";
 import TrainPage from "./pages/Training";
+import PlotPage from "./pages/Plots";
 import Footer from "./components/Footer";
 import Intro from "./components/Intro";
 import Tbd from "./components/Tbd";
@@ -85,6 +86,7 @@ class App extends React.Component {
             </>
           </Route>
           <Route path="/train/:filename" component={TrainPage} exact></Route>
+          <Route path="/plot/:filename" component={PlotPage} exact></Route>
           <Redirect to="/" />
         </Switch>
       </Router>

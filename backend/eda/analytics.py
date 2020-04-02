@@ -7,73 +7,89 @@ from datetime import date
 import json
 
 app = flask.Flask(__name__)
-CORS(app,supports_credentials=True)
+CORS(app, supports_credentials=True)
 mongo_url = "mongodb://localhost:27017/"
 
-def get_file_data(username,filename):
-        myclient = pymongo.MongoClient(mongo_url)
-        db = myclient["data_db"]
-        user_data = db["data"]
-        query = {"username":username,"filename":filename}
-        document = user_data.find(query)
-        count =0
-        file_data = ''
-        for x in document:
-                count += 1
-                file_data = x['file_data']
-        if (count != 0):
-                return file_data #returns a string
-        else:
-                return 0
 
-def get_fields(file_data,fieldlist):
-        # fieldlist is a list containing indices of fields to be extracted
-        data = dict()
-        for item in fieldlist:
-                data[item] = []
-                for line in file_data:
-                        data[item].append(line.split(",")[data[item]])
-        return data
+def get_file_data(username, filename):
+    myclient = pymongo.MongoClient(mongo_url)
+    db = myclient["data_db"]
+    user_data = db["data"]
+    query = {"username": username, "filename": filename}
+    document = user_data.find(query)
+    count = 0
+    file_data = ''
+    for x in document:
+        count += 1
+        file_data = x['file_data']
+    if (count != 0):
+        return file_data  # returns a string
+    else:
+        return 0
 
-@app.route("/api/eda/v1/get_scatter/<filename>",methods=["GET"])
-#file doesn't exist 406 not acceptable
-#valid 200
+
+def get_fields(file_data, fieldlist):
+    # fieldlist is a list containing indices of fields to be extracted
+    data = [[], [], []]
+    j = 0
+    for item in fieldlist:
+        i = 0
+        for line in file_data:
+            a = line.split(",")
+            print(a)
+            if(i == 0):
+                ind = a.index(item)
+                # print(a)
+                i += 1
+                continue
+            if(len(a) == len(a)):
+                data[j].append(float(line.split(",")[ind]))
+        print(data)
+        j += 1
+    return data
+
+
+@app.route("/api/eda/v1/get_scatter/<filename>", methods=["POST"])
+# file doesn't exist 406 not acceptable
+# valid 200
 def get_scatter(filename):
-        data = flask.request.json
-        file_data = get_file_data(flask.request.cookies["username"],filename)
-        if (file_data == 0):
-                return status.HTTP_406_NOT_ACCEPTABLE
-        else:
-                file_data = file_data.split("\n")
-                dpoints = get_fields(file_data,[data["x"],data['y'],data['target']])
-                return {"x":dpoints[0],"y":dpoints[1],"target":dpoints[2]}, 200
+    data = flask.request.form
+    file_data = get_file_data(flask.request.cookies["username"], filename)
+    if (file_data == 0):
+        return status.HTTP_406_NOT_ACCEPTABLE
+    else:
+        file_data = file_data.split("\n")
+        dpoints = get_fields(file_data, [data["x"], data['y'], data['target']])
+        print(dpoints)
+        return {"x": dpoints[0], "y": dpoints[1], "target": dpoints[2]}, 200
 
-@app.route("/api/eda/v1/gen_view/<filename>",methods=["GET"])
-#file doesn't exist 406 not acceptable
-#valid 200
+
+@app.route("/api/eda/v1/gen_view/<filename>", methods=["GET"])
+# file doesn't exist 406 not acceptable
+# valid 200
 def gen_view(filename):
-        data = get_file_data(flask.request.cookies["username"],filename)
-        data = data.split("\n")
-        if (data != 0):
-                out_json = list()
-                headers = data[0]
-                headers = headers.split(";")
-                for line in data[1:50]:
-                        info = line.split(";")
-                        a = dict()
-                        for index in range(len(headers)):
-                                try:
-                                        a[headers[index][1:-1]] = info[index]
-                                except:
-                                        break
-                        out_json.append(a)
-                header_out = list()
-                for item in headers:
-                        header_out.append({"title":item[1:-1],"field":item[1:-1]})
-                return {"headers":header_out,"data":out_json},200
-        else:
-                return flask.Response(status = status.HTTP_406_NOT_ACCEPTABLE)
-  
+    data = get_file_data(flask.request.cookies["username"], filename)
+    data = data.split("\n")
+    if (data != 0):
+        out_json = list()
+        headers = data[0]
+        headers = headers.split(";")
+        for line in data[1:50]:
+            info = line.split(";")
+            a = dict()
+            for index in range(len(headers)):
+                try:
+                    a[headers[index][1:-1]] = info[index]
+                except:
+                    break
+            out_json.append(a)
+        header_out = list()
+        for item in headers:
+            header_out.append({"title": item[1:-1], "field": item[1:-1]})
+        return {"headers": header_out, "data": out_json}, 200
+    else:
+        return flask.Response(status=status.HTTP_406_NOT_ACCEPTABLE)
+
 
 if __name__ == '__main__':
-        app.run(port = 6001)
+    app.run(port=6001)
