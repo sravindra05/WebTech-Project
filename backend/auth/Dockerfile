@@ -1,6 +1,5 @@
-FROM python:latest
-WORKDIR /
-COPY . /
-COPY ../requirements /tmp/
-RUN pip3 install -r /tmp/requirements
+FROM wtbase:latest
+WORKDIR /app
+COPY . /app
 EXPOSE 80
+CMD ["python","uac.py"]

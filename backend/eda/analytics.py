@@ -36,15 +36,18 @@ def get_fields(file_data, fieldlist):
         i = 0
         for line in file_data:
             a = line.split(",")
-            print(a)
+            #print(a)
             if(i == 0):
                 ind = a.index(item)
                 # print(a)
                 i += 1
                 continue
             if(len(a) == len(a)):
-                data[j].append(float(line.split(",")[ind]))
-        print(data)
+                try:
+                    data[j].append(float(line.split(",")[ind]))
+                except:
+                    pass
+        #print(data)
         j += 1
     return data
 
@@ -60,7 +63,7 @@ def get_scatter(filename):
     else:
         file_data = file_data.split("\n")
         dpoints = get_fields(file_data, [data["x"], data['y'], data['target']])
-        print(dpoints)
+        #print(dpoints)
         return {"x": dpoints[0], "y": dpoints[1], "target": dpoints[2]}, 200
 
 
@@ -73,9 +76,9 @@ def gen_view(filename):
     if (data != 0):
         out_json = list()
         headers = data[0]
-        headers = headers.split(";")
+        headers = headers.split(",")
         for line in data[1:50]:
-            info = line.split(";")
+            info = line.split(",")
             a = dict()
             for index in range(len(headers)):
                 try:

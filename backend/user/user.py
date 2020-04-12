@@ -5,7 +5,7 @@ import requests
 import pymongo
 from datetime import date
 import json
-
+import re
 app = flask.Flask(__name__)
 app.config['UPLOAD_FOLDER'] = './uploaded_files/'
 CORS(app,supports_credentials=True)
@@ -19,12 +19,13 @@ def newfile():
         db = myclient["data_db"]
         user_data = db["data"]
         filename = flask.request.form["filename"]
-        query = {"filename":filename}
+        query = {"username":flask.request.cookies["username"],"filename":filename}
         document = user_data.find(query)
         count = 0
         for _ in document:
                 #file exists
-                return flask.Response(status=status.HTTP_409_CONFLICT)
+                count = count + 1
+                
         if (count == 0):
                 #no files exist
                 data =''
@@ -32,9 +33,12 @@ def newfile():
                 flask.request.files['file_itself'].save(app.config['UPLOAD_FOLDER']+filename)
                 with open(app.config['UPLOAD_FOLDER']+filename,'r') as datafile:
                         data = datafile.read()
+                data = re.sub(r";|\t",",",data)
                 query = {"username":flask.request.cookies["username"],"filename":filename,"file_data":data,"file_size":len(data)}
                 document = user_data.insert_one(query)
                 return flask.Response(status=status.HTTP_200_OK)
+        else:
+                return flask.Response(status=status.HTTP_409_CONFLICT)
 
 @app.route("/api/user/v1/get_file_list", methods=["GET"])
 #200 - send data
