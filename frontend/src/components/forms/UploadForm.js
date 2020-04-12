@@ -9,7 +9,7 @@ class UploadForm extends React.Component {
     M.AutoInit();
   }
   render() {
-    var url = "http://localhost:5000";
+    var url = process.env.REACT_APP_USER;
     function upload_file(){
       let selected_file = document.getElementById("files").files[0]
       let data = new FormData();

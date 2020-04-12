@@ -36,7 +36,7 @@ class UploadForm extends React.Component {
 
   render() {
     var modelfile = this.props.file
-    var url = "http://localhost:7001";
+    var url = process.env.REACT_APP_CLASSIFIER;
     function predict(){
         var sender_object = {
             xhr: new XMLHttpRequest(),

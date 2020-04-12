@@ -6,11 +6,15 @@ import pymongo
 from datetime import date
 import json
 import re
+import os
 app = flask.Flask(__name__)
 app.config['UPLOAD_FOLDER'] = './uploaded_files/'
 CORS(app,supports_credentials=True)
-#mongo_url = "mongodb://mongo-data:27017/"
 mongo_url = "mongodb://localhost:27017/"
+
+if (os.environ.get("MONGO_URL") != None):
+    mongo_url = os.environ.get("MONGO_URL")
+
 @app.route("/api/user/v1/newfile", methods=["POST"])
 #upload successful 200
 #upload failed - conflict 409

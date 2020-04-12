@@ -16,11 +16,13 @@ from sklearn.preprocessing import StandardScaler
 import tensorflow as tf
 import os
 import fcntl
-# First Hidden Layer
 
 app = flask.Flask(__name__)
 CORS(app, supports_credentials=True)
+
 mongo_url = "mongodb://localhost:27017/"
+if (os.environ.get("MONGO_URL") != None):
+    mongo_url = os.environ.get("MONGO_URL")
 
 
 def get_file_data(username, filename):

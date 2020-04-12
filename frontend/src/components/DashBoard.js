@@ -6,13 +6,13 @@ import gen_request from "../libfx/gen_request";
 
 class DashBoard extends React.Component {
   componentDidMount() {
-    var url = "http://localhost:4000";
+    var url = process.env.REACT_APP_AUTH_SERVER;
     function view_file(file_to_view) {
       console.log(file_to_view.target.target);
       window.location.href = "/view/" + file_to_view.target.target;
     }
     function delete_file(file_to_delete) {
-      let url = "http://localhost:5000";
+      let url = process.env.REACT_APP_USER;
       //console.log(file_to_delete.target.id);
       gen_request(
         "DELETE",
@@ -38,7 +38,7 @@ class DashBoard extends React.Component {
     }
     
     function load_table() {
-      let url = "http://localhost:5000";
+      let url = process.env.REACT_APP_USER;
       gen_request(
         "GET",
         url + "/api/user/v1/get_file_list",

@@ -12,10 +12,10 @@ class PlotForm extends React.Component {
     };
   }
   componentDidMount() {
-    var url = "http://localhost:4000";
+    var url = process.env.REACT_APP_AUTH_SERVER;
     let file = this.props.file;
     function load_form(file) {
-      let url = "http://localhost:7001";
+      let url = process.env.REACT_APP_CLASSIFIER;
       var sender_object = {
         xhr: new XMLHttpRequest(),
         send: function() {
@@ -95,8 +95,7 @@ class PlotForm extends React.Component {
     check_login_state();
   }
   render() {
-    var url =
-      "http://localhost:6001/api/eda/v1/get_scatter/" + String(this.state.file);
+    var url =process.env.REACT_APP_EDA + "/api/eda/v1/get_scatter/" + String(this.state.file);
     function plot() {
       let feat = document.getElementsByClassName("feat");
       var features = [];

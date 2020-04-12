@@ -12,10 +12,10 @@ class TrainForm extends React.Component {
     };
   }
   componentDidMount() {
-    var url1 = "http://localhost:4000";
+    var url1 = process.env.REACT_APP_AUTH_SERVER;
     let file = this.props.file;
     function load_form(file) {
-      let url1 = "http://localhost:7001";
+      let url1 = process.env.REACT_APP_CLASSIFIER;
       var sender_object = {
         xhr: new XMLHttpRequest(),
         send: function () {
@@ -95,8 +95,7 @@ class TrainForm extends React.Component {
     check_login_state();
   }
   render() {
-    var url1 =
-      "http://localhost:7001/api/bin_class/v1/train/" + String(this.state.file);
+    var url1 =process.env.REACT_APP_CLASSIFIER+"/api/bin_class/v1/train/" + String(this.state.file);
     
     var datafile = this.state.file;
     function train() {
@@ -151,7 +150,7 @@ class TrainForm extends React.Component {
     }
 
     function load_table() {
-      let url = "http://localhost:7001";
+      let url = process.env.REACT_APP_CLASSIFIER;
       gen_request(
         "GET",
         url + "/api/bin_class/v1/get_models/"+String(datafile),
@@ -212,7 +211,7 @@ class TrainForm extends React.Component {
       }
     }
     function delete_model(model_to_delete) {
-      let url = "http://localhost:7001";
+      let url = process.env.REACT_APP_CLASSIFIER;
       gen_request(
         "DELETE",
         url + "/api/bin_class/v1/delete_model/" + String(model_to_delete.target.target),

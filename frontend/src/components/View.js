@@ -18,7 +18,7 @@ class View extends React.Component {
         return vars;
       }
       function get_data(){
-        let url = "http://localhost:6001";
+        let url = process.env.REACT_APP_EDA;
         gen_request("GET",url+"/api/eda/v1/gen_view/"+getUrlVars()[3],6000,{},after_get_data);
         function after_get_data(){
             if (this.readyState == 4){

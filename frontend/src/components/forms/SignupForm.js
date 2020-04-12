@@ -10,7 +10,7 @@ class SignUpForm extends React.Component {
     M.AutoInit();
   }
   render() {
-    var url = "http://localhost:4000"
+    var url = process.env.REACT_APP_AUTH_SERVER
     function attempt_signup(){
       var md5 = require('../../../node_modules/md5');
       var sender_object = {

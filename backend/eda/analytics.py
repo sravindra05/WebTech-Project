@@ -5,10 +5,12 @@ import requests
 import pymongo
 from datetime import date
 import json
-
+import os
 app = flask.Flask(__name__)
 CORS(app, supports_credentials=True)
 mongo_url = "mongodb://localhost:27017/"
+if (os.environ.get("MONGO_URL") != None):
+    mongo_url = os.environ.get("MONGO_URL")
 
 
 def get_file_data(username, filename):

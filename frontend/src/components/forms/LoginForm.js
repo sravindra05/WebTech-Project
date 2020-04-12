@@ -10,7 +10,7 @@ class LoginForm extends React.Component {
   componentDidMount() {
     // Auto initialize all the things!
     M.AutoInit();
-    var url = "http://localhost:4000"
+    var url = process.env.REACT_APP_AUTH_SERVER;
     function check_login_state(){
       var sender_object = {
         xhr: new XMLHttpRequest(),
@@ -52,7 +52,7 @@ class LoginForm extends React.Component {
     check_login_state();
   }
   render() {
-    var url = "http://localhost:4000"
+    var url = process.env.REACT_APP_AUTH_SERVER;
     function attempt_login(){
       var md5 = require('../../../node_modules/md5');
       var sender_object = {
@@ -90,7 +90,9 @@ class LoginForm extends React.Component {
     }
     return (
       <>
+      
         <main className="valign-wrapper">
+        
           <div className="row">
             <div className="col s12 m10 offset-m1 card center">
               <h5>Login</h5>
