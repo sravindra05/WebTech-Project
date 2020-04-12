@@ -97,35 +97,8 @@ class TrainForm extends React.Component {
   render() {
     var url1 =
       "http://localhost:7001/api/bin_class/v1/train/" + String(this.state.file);
-    var url2 =
-      "http://localhost:7001/api/bin_class/v1/query/" + String(this.state.file);
-    function query() {
-      let queries = document.getElementsByClassName("queries");
-      var features = [];
-      for (let i = 0; i < queries.length; i++) {
-        features.push(queries[i].value);
-      }
-      var sender_object = {
-        xhr: new XMLHttpRequest(),
-        send: function () {
-          this.xhr.open("POST", url2, true);
-          this.xhr.onreadystatechange = this.callback;
-          this.xhr.withCredentials = true;
-          let data = new FormData();
-          console.log(features);
-          data.append("features", features);
-          this.xhr.send(data);
-        },
-        callback: function () {
-          if (this.readyState == 4) {
-            if (this.status == 202) {
-              alert("Prediction Complete");
-            }
-          }
-        },
-      };
-      sender_object.send();
-    }
+    
+    var datafile = this.state.file;
     function train() {
       let feat = document.getElementsByClassName("feat");
       var features = [];
@@ -135,12 +108,12 @@ class TrainForm extends React.Component {
         }
       }
       if (features.length == 0) {
-        alert("Please select atleast one feature. Don't be dumb");
+        alert("Please select atleast one feature to train on.");
         return;
       }
       var target = document.querySelector('input[name="target"]:checked');
       if (target == null) {
-        alert("The fuck do you want me to learn?");
+        alert("Please pick some parameter to learn");
         return;
       }
       var target = document.querySelector('input[name="target"]:checked').value;
@@ -160,16 +133,16 @@ class TrainForm extends React.Component {
           if (this.readyState == 4) {
             if (this.status == 200) {
               alert("Training Complete");
-              for (let i = 0; i < features.length; i++) {
-                var div = document.createElement("div");
-                div.setAttribute("class", "col s6 offset-s3");
-                var text = document.createElement("input");
-                text.setAttribute("type", "text");
-                text.setAttribute("class", "queries");
-                text.setAttribute("placeholder", features[i]);
-                document.getElementById("feature_q").appendChild(text);
-              }
-              document.getElementById("query").style = {};
+              // for (let i = 0; i < features.length; i++) {
+              //   var div = document.createElement("div");
+              //   div.setAttribute("class", "col s6 offset-s3");
+              //   var text = document.createElement("input");
+              //   text.setAttribute("type", "text");
+              //   text.setAttribute("class", "queries");
+              //   text.setAttribute("placeholder", features[i]);
+              //   document.getElementById("feature_q").appendChild(text);
+              // }
+              // document.getElementById("query").style = {};
             }
           }
         },
@@ -177,6 +150,88 @@ class TrainForm extends React.Component {
       sender_object.send();
     }
 
+    function load_table() {
+      let url = "http://localhost:7001";
+      gen_request(
+        "GET",
+        url + "/api/bin_class/v1/get_models/"+String(datafile),
+        7001,
+        {},
+        callback
+      );
+      function callback() {
+        if (this.readyState == 4) {
+
+          if (this.status == 201) {
+            let newp = document.createElement("p");
+            newp.innerHTML = "You have no models";
+            document.getElementById("model_list").appendChild(newp);
+          }
+          if (this.status == 200) {
+            let data = JSON.parse(this.response);
+            let div = document.getElementById("model_list");
+            for (var key in data) {
+              let newdiv = document.createElement("div");
+              newdiv.className = "col s12";
+              let newp = document.createElement("p");
+              newp.style = "display: inline-block";
+              newp.innerText =
+                "Model Index: " + data[key]["id"] + " Features: " + data[key]["features"] + " Target: "+ data[key]["target"];
+
+              
+              let newpredict = document.createElement("a");
+              newpredict.className = "btn white-text green";
+              newpredict.style = "display: inline-block;float:right";
+              newpredict.target = data[key]["filename"];
+              newpredict.innerText = "Predict";
+              newpredict.href = "/predict/" + data[key]["filename"];
+              newpredict.onclick = null;
+
+              let newdelete = document.createElement("a");
+              newdelete.className = "btn white-text red";
+              newdelete.style = "display: inline-block;float:right";
+              newdelete.target = data[key]["filename"];
+              newdelete.innerText = "Delete";
+              newdelete.onclick = delete_model;
+              
+              newdiv.appendChild(newdelete);
+              newdiv.appendChild(newpredict);
+              newdiv.appendChild(newp);
+              div.appendChild(newdiv);
+            }
+          }
+          setTimeout(function(){reset_table();load_table()},10000); //periodic refresh
+        }
+      }
+    }
+    
+    function reset_table(){
+      var table = document.getElementById("model_list");
+      while (table.children.length > 0){
+        table.removeChild(table.lastChild);
+      }
+    }
+    function delete_model(model_to_delete) {
+      let url = "http://localhost:7001";
+      gen_request(
+        "DELETE",
+        url + "/api/bin_class/v1/delete_model/" + String(model_to_delete.target.target),
+        7001,
+        {},
+        after_delete
+      );
+      function after_delete() {
+        if (this.readyState == 4) {
+          if (this.status == 200) {
+            alert("Model deleted successfully");
+          }
+          if (this.status == 403){
+            alert("Model not found");
+          }
+        }
+      }
+    }
+    load_table();
     return (
       <>
         <main id="main" style={{ display: "none" }}>
@@ -196,24 +251,12 @@ class TrainForm extends React.Component {
                   </a>
                 </form>
               </div>
-              <div
-                id="query"
-                style={{ display: "none" }}
-                className="col s12 center"
-              >
-                <form action="#">
-                  <div id="feature_q" className="col s6 offset-s3">
-                    <h5 className="center">Enter Feature(s)</h5>
-                  </div>
-
-                  <div className="col s6 offset-s3 center">
-                    <a className="btn waves-effect green" onClick={query}>
-                      Query
-                    </a>
-                  </div>
-                </form>
-              </div>
+              
             </div>
+            <h4>Existing Models</h4>
+            <div class="row" id="model_list">
+
+            </div> 
           </div>
         </main>
       </>

@@ -25,11 +25,18 @@ class DashBoard extends React.Component {
         if (this.readyState == 4) {
           if (this.status == 200) {
             alert("File deleted successfully");
-            window.location.reload();
+            //window.location.reload();
           }
         }
       }
     }
+    function reset_table(){
+      var table = document.getElementById("file_list");
+      while (table.children.length > 1){
+        table.removeChild(table.lastChild);
+      }
+    }
+    
     function load_table() {
       let url = "http://localhost:5000";
       gen_request(
@@ -41,6 +48,7 @@ class DashBoard extends React.Component {
       );
       function callback() {
         if (this.readyState == 4) {
+
           if (this.status == 204) {
             let newp = document.createElement("p");
             newp.innerHTML = "You have no files";
@@ -77,6 +85,8 @@ class DashBoard extends React.Component {
               newview.style = "display: inline-block;float:right";
               newview.target = data[key]["filename"];
               newview.innerText = "View";
+              newview.href = "/view/" + data[key]["filename"];
+              newview.onclick = null;
 
               let newdelete = document.createElement("a");
               newdelete.className = "btn white-text red";
@@ -92,9 +102,11 @@ class DashBoard extends React.Component {
               newdiv.appendChild(newlearn);
               newdiv.appendChild(newplot);
 
-              div.insertBefore(newdiv, document.getElementById("uploadbtn"));
+              //div.insertBefore(newdiv, document.getElementById("uploadbtn"));
+              div.appendChild(newdiv);
             }
           }
+          setTimeout(function(){reset_table();load_table()},10000); //periodic refresh
         }
       }
     }
@@ -156,7 +168,7 @@ class DashBoard extends React.Component {
             <div className="row" id="file_list">
               <div id="uploadbtn" className="col s12 center">
                 <a className="btn green">
-                  <NavLink to="/upload" className="white-text">
+                  <NavLink to="/upload" target="_blank" className="white-text">
                     Upload New File
                   </NavLink>
                 </a>

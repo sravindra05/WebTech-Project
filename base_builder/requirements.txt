@@ -1,0 +1,10 @@
+flask
+flask_cors
+flask_api
+requests
+pymongo
+scikit-learn
+keras
+tensorflow
+pandas
+numpy
