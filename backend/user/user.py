@@ -38,6 +38,7 @@ def newfile():
                 with open(app.config['UPLOAD_FOLDER']+filename,'r') as datafile:
                         data = datafile.read()
                 data = re.sub(r";|\t",",",data)
+                data = re.sub(r"\n\r","",data)
                 query = {"username":flask.request.cookies["username"],"filename":filename,"file_data":data,"file_size":len(data)}
                 document = user_data.insert_one(query)
                 return flask.Response(status=status.HTTP_200_OK)

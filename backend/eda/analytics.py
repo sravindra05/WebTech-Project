@@ -75,22 +75,25 @@ def get_scatter(filename):
 def gen_view(filename):
     data = get_file_data(flask.request.cookies["username"], filename)
     data = data.split("\n")
+    
     if (data != 0):
         out_json = list()
         headers = data[0]
         headers = headers.split(",")
+        
         for line in data[1:50]:
             info = line.split(",")
             a = dict()
             for index in range(len(headers)):
                 try:
-                    a[headers[index][1:-1]] = info[index]
+                    a[headers[index]] = info[index]
                 except:
                     break
             out_json.append(a)
         header_out = list()
+       
         for item in headers:
-            header_out.append({"title": item[1:-1], "field": item[1:-1]})
+            header_out.append({"title": item, "field": item})
         return {"headers": header_out, "data": out_json}, 200
     else:
         return flask.Response(status=status.HTTP_406_NOT_ACCEPTABLE)
