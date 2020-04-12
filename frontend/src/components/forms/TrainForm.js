@@ -8,27 +8,27 @@ class TrainForm extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      file: this.props.file
+      file: this.props.file,
     };
   }
   componentDidMount() {
-    var url = "http://localhost:4000";
+    var url1 = "http://localhost:4000";
     let file = this.props.file;
     function load_form(file) {
-      let url = "http://localhost:7001";
+      let url1 = "http://localhost:7001";
       var sender_object = {
         xhr: new XMLHttpRequest(),
-        send: function() {
+        send: function () {
           this.xhr.open(
             "GET",
-            url + "/api/bin_class/v1/get_features/" + String(file),
+            url1 + "/api/bin_class/v1/get_features/" + String(file),
             true
           );
           this.xhr.onreadystatechange = this.callback;
           this.xhr.withCredentials = true;
           this.xhr.send();
         },
-        callback: callback
+        callback: callback,
       };
       sender_object.send();
     }
@@ -74,13 +74,13 @@ class TrainForm extends React.Component {
     function check_login_state() {
       var sender_object = {
         xhr: new XMLHttpRequest(),
-        send: function() {
-          this.xhr.open("POST", url + "/api/uac/v1/check", true);
+        send: function () {
+          this.xhr.open("POST", url1 + "/api/uac/v1/check", true);
           this.xhr.onreadystatechange = this.callback;
           this.xhr.withCredentials = true;
           this.xhr.send();
         },
-        callback: function() {
+        callback: function () {
           if (this.readyState == 4) {
             if (this.status == 202) {
               //no problems
@@ -88,15 +88,44 @@ class TrainForm extends React.Component {
               load_form(file);
             }
           }
-        }
+        },
       };
       sender_object.send();
     }
     check_login_state();
   }
   render() {
-    var url =
+    var url1 =
       "http://localhost:7001/api/bin_class/v1/train/" + String(this.state.file);
+    var url2 =
+      "http://localhost:7001/api/bin_class/v1/query/" + String(this.state.file);
+    function query() {
+      let queries = document.getElementsByClassName("queries");
+      var features = [];
+      for (let i = 0; i < queries.length; i++) {
+        features.push(queries[i].value);
+      }
+      var sender_object = {
+        xhr: new XMLHttpRequest(),
+        send: function () {
+          this.xhr.open("POST", url2, true);
+          this.xhr.onreadystatechange = this.callback;
+          this.xhr.withCredentials = true;
+          let data = new FormData();
+          console.log(features);
+          data.append("features", features);
+          this.xhr.send(data);
+        },
+        callback: function () {
+          if (this.readyState == 4) {
+            if (this.status == 202) {
+              alert("Prediction Complete");
+            }
+          }
+        },
+      };
+      sender_object.send();
+    }
     function train() {
       let feat = document.getElementsByClassName("feat");
       var features = [];
@@ -117,8 +146,8 @@ class TrainForm extends React.Component {
       var target = document.querySelector('input[name="target"]:checked').value;
       var sender_object = {
         xhr: new XMLHttpRequest(),
-        send: function() {
-          this.xhr.open("PUT", url, true);
+        send: function () {
+          this.xhr.open("PUT", url1, true);
           this.xhr.onreadystatechange = this.callback;
           this.xhr.withCredentials = true;
           let data = new FormData();
@@ -127,13 +156,23 @@ class TrainForm extends React.Component {
           data.append("target", target);
           this.xhr.send(data);
         },
-        callback: function() {
+        callback: function () {
           if (this.readyState == 4) {
-            if (this.status == 202) {
+            if (this.status == 200) {
               alert("Training Complete");
+              for (let i = 0; i < features.length; i++) {
+                var div = document.createElement("div");
+                div.setAttribute("class", "col s6 offset-s3");
+                var text = document.createElement("input");
+                text.setAttribute("type", "text");
+                text.setAttribute("class", "queries");
+                text.setAttribute("placeholder", features[i]);
+                document.getElementById("feature_q").appendChild(text);
+              }
+              document.getElementById("query").style = {};
             }
           }
-        }
+        },
       };
       sender_object.send();
     }
@@ -155,6 +194,23 @@ class TrainForm extends React.Component {
                   <a className="btn waves-effect green" onClick={train}>
                     Learn
                   </a>
+                </form>
+              </div>
+              <div
+                id="query"
+                style={{ display: "none" }}
+                className="col s12 center"
+              >
+                <form action="#">
+                  <div id="feature_q" className="col s6 offset-s3">
+                    <h5 className="center">Enter Feature(s)</h5>
+                  </div>
+
+                  <div className="col s6 offset-s3 center">
+                    <a className="btn waves-effect green" onClick={query}>
+                      Query
+                    </a>
+                  </div>
                 </form>
               </div>
             </div>

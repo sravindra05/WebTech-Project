@@ -106,10 +106,13 @@ class PlotForm extends React.Component {
           features.push(feat[i].value);
           count += 1;
         }
-        if (count == 2) break;
       }
       if (features.length == 0) {
         alert("Please select atleast one feature. Don't be dumb");
+        return;
+      }
+      if (features.length > 2) {
+        alert("Please select atmost 2 features. Don't be dumb");
         return;
       }
       var target = document.querySelector('input[name="target"]:checked');
@@ -152,7 +155,7 @@ class PlotForm extends React.Component {
                   y_f.push(y[i]);
                 }
               }
-              var trace1 = {
+              var positive = {
                 x: x_t,
                 y: y_t,
                 mode: "markers",
@@ -161,7 +164,7 @@ class PlotForm extends React.Component {
                   color: "green"
                 }
               };
-              var trace2 = {
+              var negative = {
                 x: x_f,
                 y: y_f,
                 mode: "markers",
@@ -184,7 +187,7 @@ class PlotForm extends React.Component {
                 type: "scatter"
               };*/
 
-              var data = [trace1, trace2];
+              var data = [positive, negative];
               document.getElementById("plot_wrap").style = {};
               Plotly.newPlot("plot", data);
             }
@@ -222,7 +225,7 @@ class PlotForm extends React.Component {
                 >
                   <div
                     id="plot"
-                    style={{ minHeight: "30rem" }}
+                    style={{ minHeight: "30rem", marginTop: "2.5rem" }}
                     className="col s12"
                   ></div>
                 </div>
