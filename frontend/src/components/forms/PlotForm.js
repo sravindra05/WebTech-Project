@@ -95,7 +95,10 @@ class PlotForm extends React.Component {
     check_login_state();
   }
   render() {
-    var url =process.env.REACT_APP_EDA + "/api/eda/v1/get_scatter/" + String(this.state.file);
+    var url =
+      process.env.REACT_APP_EDA +
+      "/api/eda/v1/get_scatter/" +
+      String(this.state.file);
     function plot() {
       let feat = document.getElementsByClassName("feat");
       var tot = [];
@@ -108,17 +111,13 @@ class PlotForm extends React.Component {
         }
         tot.push(feat[i].value);
       }
-      if (features.length == 0) {
-        alert("Please select atleast one feature. Don't be dumb");
-        return;
-      }
-      if (features.length > 2) {
-        alert("Please select atmost 2 features. Don't be dumb");
+      if (features.length != 2) {
+        alert("Please select two features");
         return;
       }
       var target = document.querySelector('input[name="target"]:checked');
       if (target == null) {
-        alert("I cannot learn if you don't select a target.");
+        alert("I cannot plot if you don't select a target.");
         return;
       }
       var target = document.querySelector('input[name="target"]:checked').value;
@@ -139,6 +138,7 @@ class PlotForm extends React.Component {
         callback: function () {
           if (this.readyState == 4) {
             if (this.status == 200) {
+              document.getElementById("others").innerHTML = "";
               var plot_params = JSON.parse(this.response);
               var t = plot_params[target];
               var x = plot_params[features[0]];
@@ -274,7 +274,7 @@ class PlotForm extends React.Component {
                     "style",
                     "min-height:30rem;margin-top:2.5rem"
                   );
-                  document.getElementById("other").appendChild(np);
+                  document.getElementById("others").appendChild(np);
                   Plotly.newPlot(np, data, layout);
                   count++;
                 }
@@ -325,6 +325,7 @@ class PlotForm extends React.Component {
                       Here are a few more plots you may find insightful
                     </h3>
                   </div>
+                  <div id="others" className="col s12"></div>
                 </div>
               </div>
             </div>
