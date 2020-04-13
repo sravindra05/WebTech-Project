@@ -8,7 +8,7 @@ class PlotForm extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      file: this.props.file
+      file: this.props.file,
     };
   }
   componentDidMount() {
@@ -18,7 +18,7 @@ class PlotForm extends React.Component {
       let url = "http://localhost:7001";
       var sender_object = {
         xhr: new XMLHttpRequest(),
-        send: function() {
+        send: function () {
           this.xhr.open(
             "GET",
             url + "/api/bin_class/v1/get_features/" + String(file),
@@ -28,7 +28,7 @@ class PlotForm extends React.Component {
           this.xhr.withCredentials = true;
           this.xhr.send();
         },
-        callback: callback
+        callback: callback,
       };
       sender_object.send();
     }
@@ -74,13 +74,13 @@ class PlotForm extends React.Component {
     function check_login_state() {
       var sender_object = {
         xhr: new XMLHttpRequest(),
-        send: function() {
+        send: function () {
           this.xhr.open("POST", url + "/api/uac/v1/check", true);
           this.xhr.onreadystatechange = this.callback;
           this.xhr.withCredentials = true;
           this.xhr.send();
         },
-        callback: function() {
+        callback: function () {
           if (this.readyState == 4) {
             if (this.status == 202) {
               //no problems
@@ -88,7 +88,7 @@ class PlotForm extends React.Component {
               load_form(file);
             }
           }
-        }
+        },
       };
       sender_object.send();
     }
@@ -99,6 +99,7 @@ class PlotForm extends React.Component {
       "http://localhost:6001/api/eda/v1/get_scatter/" + String(this.state.file);
     function plot() {
       let feat = document.getElementsByClassName("feat");
+      var tot = [];
       var features = [];
       var count = 0;
       for (let i = 0; i < feat.length; i++) {
@@ -106,6 +107,7 @@ class PlotForm extends React.Component {
           features.push(feat[i].value);
           count += 1;
         }
+        tot.push(feat[i].value);
       }
       if (features.length == 0) {
         alert("Please select atleast one feature. Don't be dumb");
@@ -123,7 +125,7 @@ class PlotForm extends React.Component {
       var target = document.querySelector('input[name="target"]:checked').value;
       var sender_object = {
         xhr: new XMLHttpRequest(),
-        send: function() {
+        send: function () {
           this.xhr.open("POST", url, true);
           this.xhr.onreadystatechange = this.callback;
           this.xhr.withCredentials = true;
@@ -135,13 +137,13 @@ class PlotForm extends React.Component {
           console.log(data.getAll("y"));
           this.xhr.send(data);
         },
-        callback: function() {
+        callback: function () {
           if (this.readyState == 4) {
             if (this.status == 200) {
               var plot_params = JSON.parse(this.response);
-              var t = plot_params["target"];
-              var x = plot_params["x"];
-              var y = plot_params["y"];
+              var t = plot_params[target];
+              var x = plot_params[features[0]];
+              var y = plot_params[features[1]];
               var x_t = [];
               var y_t = [];
               var x_f = [];
@@ -161,8 +163,8 @@ class PlotForm extends React.Component {
                 mode: "markers",
                 type: "scatter",
                 marker: {
-                  color: "green"
-                }
+                  color: "green",
+                },
               };
               var negative = {
                 x: x_f,
@@ -170,29 +172,111 @@ class PlotForm extends React.Component {
                 mode: "markers",
                 type: "scatter",
                 marker: {
-                  color: "red"
-                }
+                  color: "red",
+                },
               };
-              /*var trace2 = {
-                x: [2, 3, 4, 5],
-                y: [16, 5, 11, 9],
-                mode: "lines",
-                type: "scatter"
+              var layout = {
+                xaxis: {
+                  title: {
+                    text: features[0],
+                    font: {
+                      family: "Courier New, monospace",
+                      size: 18,
+                      color: "#7f7f7f",
+                    },
+                  },
+                },
+                yaxis: {
+                  title: {
+                    text: features[1],
+                    font: {
+                      family: "Courier New, monospace",
+                      size: 18,
+                      color: "#7f7f7f",
+                    },
+                  },
+                },
               };
-
-              var trace3 = {
-                x: [1, 2, 3, 4],
-                y: [12, 9, 15, 12],
-                mode: "lines+markers",
-                type: "scatter"
-              };*/
 
               var data = [positive, negative];
               document.getElementById("plot_wrap").style = {};
-              Plotly.newPlot("plot", data);
+              Plotly.newPlot("plot", data, layout);
+              function insights() {
+                var t = plot_params[target];
+                var o = Math.floor(Math.random() * tot.length);
+                var p = 0;
+                while (p == o) {
+                  p = Math.floor(Math.random() * tot.length);
+                }
+                var x = plot_params[tot[o]];
+                var y = plot_params[tot[p]];
+                console.log(x, y);
+                var x_t = [];
+                var y_t = [];
+                var x_f = [];
+                var y_f = [];
+                for (let i = 0; i < t.length; i++) {
+                  if (t[i] == 1) {
+                    x_t.push(x[i]);
+                    y_t.push(y[i]);
+                  } else {
+                    x_f.push(x[i]);
+                    y_f.push(y[i]);
+                  }
+                }
+                var positive = {
+                  x: x_t,
+                  y: y_t,
+                  mode: "markers",
+                  type: "scatter",
+                  marker: {
+                    color: "green",
+                  },
+                };
+                var negative = {
+                  x: x_f,
+                  y: y_f,
+                  mode: "markers",
+                  type: "scatter",
+                  marker: {
+                    color: "red",
+                  },
+                };
+                var layout = {
+                  xaxis: {
+                    title: {
+                      text: tot[o],
+                      font: {
+                        family: "Courier New, monospace",
+                        size: 18,
+                        color: "#7f7f7f",
+                      },
+                    },
+                  },
+                  yaxis: {
+                    title: {
+                      text: tot[p],
+                      font: {
+                        family: "Courier New, monospace",
+                        size: 18,
+                        color: "#7f7f7f",
+                      },
+                    },
+                  },
+                };
+                var data = [positive, negative];
+                var np = document.createElement("div");
+                np.setAttribute("class", "col s12");
+                np.setAttribute("style", "min-height:30rem;margin-top:2.5rem");
+                document.getElementById("other").appendChild(np);
+                Plotly.newPlot(np, data, layout);
+              }
+              for (let j = 0; j < 5; j++) {
+                setTimeout(insights(), 5000);
+              }
             }
           }
-        }
+        },
       };
       sender_object.send();
     }
@@ -220,14 +304,19 @@ class PlotForm extends React.Component {
               <div className="row">
                 <div
                   id="plot_wrap"
-                  className="col s8 offset-s2 card"
+                  className="col s8 offset-s2 "
                   style={{ display: "none" }}
                 >
-                  <div
-                    id="plot"
-                    style={{ minHeight: "30rem", marginTop: "2.5rem" }}
-                    className="col s12"
-                  ></div>
+                  <div id="other" className="col s12">
+                    <div
+                      id="plot"
+                      style={{ minHeight: "30rem", marginTop: "2.5rem" }}
+                    ></div>
+
+                    <h3 className="center">
+                      Here are a few more plots you may find insightful
+                    </h3>
+                  </div>
                 </div>
               </div>
             </div>
