@@ -118,7 +118,7 @@ class PlotForm extends React.Component {
       }
       var target = document.querySelector('input[name="target"]:checked');
       if (target == null) {
-        alert("The fuck do you want me to learn?");
+        alert("I cannot learn if you don't select a target.");
         return;
       }
       var target = document.querySelector('input[name="target"]:checked').value;
