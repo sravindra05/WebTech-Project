@@ -201,79 +201,88 @@ class PlotForm extends React.Component {
               var data = [positive, negative];
               document.getElementById("plot_wrap").style = {};
               Plotly.newPlot("plot", data, layout);
+              var count = 0;
               function insights() {
-                var t = plot_params[target];
-                var o = Math.floor(Math.random() * tot.length);
-                var p = Math.floor(Math.random() * tot.length);
-                while (p == o) {
-                  p = Math.floor(Math.random() * tot.length);
-                }
-                var x = plot_params[tot[o]];
-                var y = plot_params[tot[p]];
-                console.log(x, y);
-                var x_t = [];
-                var y_t = [];
-                var x_f = [];
-                var y_f = [];
-                for (let i = 0; i < t.length; i++) {
-                  if (t[i] == 1) {
-                    x_t.push(x[i]);
-                    y_t.push(y[i]);
-                  } else {
-                    x_f.push(x[i]);
-                    y_f.push(y[i]);
+                if (count == 5) {
+                  clearInterval(id);
+                } else {
+                  var t = plot_params[target];
+                  var o = Math.floor(Math.random() * tot.length);
+                  var p = Math.floor(Math.random() * tot.length);
+                  while (p == o) {
+                    p = Math.floor(Math.random() * tot.length);
                   }
+                  var x = plot_params[tot[o]];
+                  var y = plot_params[tot[p]];
+                  console.log(x, y);
+                  var x_t = [];
+                  var y_t = [];
+                  var x_f = [];
+                  var y_f = [];
+                  for (let i = 0; i < t.length; i++) {
+                    if (t[i] == 1) {
+                      x_t.push(x[i]);
+                      y_t.push(y[i]);
+                    } else {
+                      x_f.push(x[i]);
+                      y_f.push(y[i]);
+                    }
+                  }
+                  var positive = {
+                    x: x_t,
+                    y: y_t,
+                    mode: "markers",
+                    type: "scatter",
+                    marker: {
+                      color: "green",
+                    },
+                  };
+                  var negative = {
+                    x: x_f,
+                    y: y_f,
+                    mode: "markers",
+                    type: "scatter",
+                    marker: {
+                      color: "red",
+                    },
+                  };
+                  var layout = {
+                    xaxis: {
+                      title: {
+                        text: tot[o],
+                        font: {
+                          family: "Courier New, monospace",
+                          size: 18,
+                          color: "#7f7f7f",
+                        },
+                      },
+                    },
+                    yaxis: {
+                      title: {
+                        text: tot[p],
+                        font: {
+                          family: "Courier New, monospace",
+                          size: 18,
+                          color: "#7f7f7f",
+                        },
+                      },
+                    },
+                  };
+                  var data = [positive, negative];
+                  var np = document.createElement("div");
+                  np.setAttribute("class", "col s12");
+                  np.setAttribute(
+                    "style",
+                    "min-height:30rem;margin-top:2.5rem"
+                  );
+                  document.getElementById("other").appendChild(np);
+                  Plotly.newPlot(np, data, layout);
+                  count++;
                 }
-                var positive = {
-                  x: x_t,
-                  y: y_t,
-                  mode: "markers",
-                  type: "scatter",
-                  marker: {
-                    color: "green",
-                  },
-                };
-                var negative = {
-                  x: x_f,
-                  y: y_f,
-                  mode: "markers",
-                  type: "scatter",
-                  marker: {
-                    color: "red",
-                  },
-                };
-                var layout = {
-                  xaxis: {
-                    title: {
-                      text: tot[o],
-                      font: {
-                        family: "Courier New, monospace",
-                        size: 18,
-                        color: "#7f7f7f",
-                      },
-                    },
-                  },
-                  yaxis: {
-                    title: {
-                      text: tot[p],
-                      font: {
-                        family: "Courier New, monospace",
-                        size: 18,
-                        color: "#7f7f7f",
-                      },
-                    },
-                  },
-                };
-                var data = [positive, negative];
-                var np = document.createElement("div");
-                np.setAttribute("class", "col s12");
-                np.setAttribute("style", "min-height:30rem;margin-top:2.5rem");
-                document.getElementById("other").appendChild(np);
-                Plotly.newPlot(np, data, layout);
               }
-              for (let j = 0; j < 5; j++) {
-                setTimeout(insights(), 5000);
-              }
+              var id = setInterval(function () {
+                insights();
+              }, 2000);
             }
           }
         },
