@@ -138,6 +138,7 @@ class PlotForm extends React.Component {
         callback: function () {
           if (this.readyState == 4) {
             if (this.status == 200) {
+              document.getElementById("others").innerHTML = "";
               var plot_params = JSON.parse(this.response);
               var t = plot_params[target];
               var x = plot_params[features[0]];
@@ -273,7 +274,7 @@ class PlotForm extends React.Component {
                     "style",
                     "min-height:30rem;margin-top:2.5rem"
                   );
-                  document.getElementById("other").appendChild(np);
+                  document.getElementById("others").appendChild(np);
                   Plotly.newPlot(np, data, layout);
                   count++;
                 }
@@ -324,6 +325,7 @@ class PlotForm extends React.Component {
                       Here are a few more plots you may find insightful
                     </h3>
                   </div>
+                  <div id="others" className="col s12"></div>
                 </div>
               </div>
             </div>
