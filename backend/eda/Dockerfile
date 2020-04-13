@@ -1,4 +1,4 @@
-FROM eda:latest
+FROM wtbase:latest
 WORKDIR /app
 COPY . /app
 EXPOSE 6001

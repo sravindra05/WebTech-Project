@@ -6,6 +6,8 @@ import pymongo
 from datetime import date
 import json
 import os
+import pandas as pd
+from io import StringIO
 app = flask.Flask(__name__)
 CORS(app, supports_credentials=True)
 mongo_url = "mongodb://localhost:27017/"
@@ -38,7 +40,7 @@ def get_fields(file_data, fieldlist):
         i = 0
         for line in file_data:
             a = line.split(",")
-            #print(a)
+            # print(a)
             if(i == 0):
                 ind = a.index(item)
                 # print(a)
@@ -49,7 +51,7 @@ def get_fields(file_data, fieldlist):
                     data[j].append(float(line.split(",")[ind]))
                 except:
                     pass
-        #print(data)
+        # print(data)
         j += 1
     return data
 
@@ -63,10 +65,15 @@ def get_scatter(filename):
     if (file_data == 0):
         return status.HTTP_406_NOT_ACCEPTABLE
     else:
+        df = pd.read_csv(StringIO(file_data))
+        d = {}
+        for i in df.keys():
+            d[i] = list(df[i])
+        print(d.keys())
         file_data = file_data.split("\n")
-        dpoints = get_fields(file_data, [data["x"], data['y'], data['target']])
-        #print(dpoints)
-        return {"x": dpoints[0], "y": dpoints[1], "target": dpoints[2]}, 200
+        #dpoints = get_fields(file_data, [data["x"], data['y'], data['target']])
+        # print(dpoints)
+        return d, 200
 
 
 @app.route("/api/eda/v1/gen_view/<filename>", methods=["GET"])

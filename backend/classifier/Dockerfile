@@ -1,4 +1,4 @@
-FROM classifier:latest
+FROM wtbase:latest
 WORKDIR /app
 COPY . /app
 EXPOSE 7001

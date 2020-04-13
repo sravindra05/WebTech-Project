@@ -1,4 +1,4 @@
-FROM user:latest
+FROM wtbase:latest
 WORKDIR /app
 COPY . /app
 EXPOSE 5000
