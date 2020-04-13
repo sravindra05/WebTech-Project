@@ -1,6 +1,8 @@
-kubectl apply -f auth_base.yaml
-kubectl apply -f bank_base.yaml
-kubectl apply -f genesis.yaml
-kubectl apply -f bank_server.yaml
+kubectl apply -f auth.yaml
+kubectl apply -f classifier.yaml
+kubectl apply -f eda.yaml
+kubectl apply -f ui.yaml
+kubectl apply -f user.yml
+kubectl apply -f mongo-data.yaml
 kubectl apply -f svc_create.yaml
 echo "Setup complete"

@@ -15,6 +15,7 @@ mongo_url = "mongodb://localhost:27017/"
 if (os.environ.get("MONGO_URL") != None):
     mongo_url = os.environ.get("MONGO_URL")
 
+
 @app.route("/api/user/v1/newfile", methods=["POST"])
 #upload successful 200
 #upload failed - conflict 409
@@ -76,5 +77,5 @@ def delete_file(filename):
         return flask.Response(status = status.HTTP_200_OK)
         
 if (__name__ == "__main__"):
-        app.run(port=5000)
+        app.run(host="0.0.0.0",port=5000,debug=True)
         

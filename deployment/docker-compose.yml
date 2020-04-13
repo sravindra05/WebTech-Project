@@ -1,0 +1,68 @@
+version: '3.4'
+services:
+  mongo-service:
+    network_mode: host
+    image: mongo
+    expose:
+      - 27017
+    ports:
+      - 27017:27017
+    container_name: mongo-service
+   
+  auth:
+    network_mode: host
+    image: uac
+    build: ../backend/auth
+    expose:
+      - 4000
+    ports:
+      - 4000:4000
+    container_name: auth
+    environment:
+      - MONGO_URL=mongodb://localhost:27017/
+
+  classifier:
+    network_mode: host
+    image: classifier
+    build: ../backend/classifier
+    expose:
+      - 7001
+    ports:
+      - 7001:7001
+    container_name: classifier
+    environment:
+      - MONGO_URL=mongodb://localhost:27017/
+
+  eda:
+    network_mode: host
+    image: eda
+    build: ../backend/eda
+    expose:
+      - 6001
+    ports:
+      - 6001:6001
+    container_name: eda
+    environment:
+      - MONGO_URL=mongodb://localhost:27017/
+
+  user:
+    network_mode: host
+    image: user
+    build: ../backend/user
+    expose:
+      - 5000
+    ports:
+      - 5000:5000
+    container_name: user
+    environment:
+      - MONGO_URL=mongodb://localhost:27017/
+
+  ui:
+    network_mode: host
+    image: frontend
+    build: ../frontend
+    expose:
+      - 3000
+    ports:
+      - 3000:3000
+    container_name: frontend

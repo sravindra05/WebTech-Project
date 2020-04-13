@@ -1,5 +1,5 @@
-kubectl delete -f auth_base.yaml
-kubectl delete -f bank_base.yaml
-kubectl delete -f genesis.yaml
-kubectl delete -f svc_create.yaml
-echo "Delete complete"
+kubectl delete -f auth.yaml
+kubectl delete -f classifier.yaml
+kubectl delete -f eda.yaml
+kubectl delete -f ui.yaml
+kubectl delete -f mongo-data.yaml

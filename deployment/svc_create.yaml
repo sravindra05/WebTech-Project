@@ -7,8 +7,8 @@ metadata:
 spec:
   ports:
   - name: web
-    port: 80
-    targetPort: 80
+    port: 4000
+    targetPort: 4000
   selector:
     target: auth
   type: LoadBalancer
@@ -21,8 +21,8 @@ metadata:
 spec:
   ports:
   - name: web
-    port: 80
-    targetPort: 80
+    port: 7001
+    targetPort: 7001
   selector:
     target: classifier
   type: LoadBalancer
@@ -32,7 +32,7 @@ spec:
 apiVersion: v1
 kind: Service
 metadata:
-  name: mongo-data
+  name: mongo-service
 spec:
   ports:
   - name: normal
@@ -51,9 +51,41 @@ metadata:
 spec:
   ports:
   - name: web
-    port: 80
-    targetPort: 80
+    port: 6001
+    targetPort: 6001
   selector:
     target: eda
   type: LoadBalancer
+
+---
+
+apiVersion: v1
+kind: Service
+metadata:
+  name: user
+spec:
+  ports:
+  - name: web
+    port: 5000
+    targetPort: 5000
+  selector:
+    target: user
+  type: LoadBalancer
+
+---
+
+apiVersion: v1
+kind: Service
+metadata:
+  name: ui
+spec:
+  ports:
+  - name: web
+    port: 80
+    targetPort: 80
+  selector:
+    target: ui
+  type: LoadBalancer
+
+
 

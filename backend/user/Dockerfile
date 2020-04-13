@@ -1,5 +1,5 @@
-FROM wtbase:latest
+FROM user:latest
 WORKDIR /app
 COPY . /app
-EXPOSE 80
+EXPOSE 5000
 CMD ["python","user.py"]

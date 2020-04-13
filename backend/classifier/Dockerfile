@@ -1,5 +1,5 @@
-FROM wtbase:latest
+FROM classifier:latest
 WORKDIR /app
 COPY . /app
-EXPOSE 80
+EXPOSE 7001
 CMD ["python","bin_class.py"]

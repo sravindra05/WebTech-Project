@@ -17,13 +17,14 @@ spec:
     spec:
       containers:
         - name: container
-          image: auth
-          imagePullPolicy: Always
+          image: uac
+          imagePullPolicy: IfNotPresent
           env:
             - name: GET_HOSTS_FROM
               value: dns
-          command: ["python3","./auth.py"]
+            - name: MONGO_URL
+              value: mongodb://mongo-service:27017/
           ports:
-            - containerPort: 80
+            - containerPort: 4000
       dnsPolicy: ClusterFirst
       restartPolicy: Always

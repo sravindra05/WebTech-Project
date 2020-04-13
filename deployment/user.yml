@@ -1,26 +1,30 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: mongo-data
+  name: user
   labels:
-    app: mongo-data
-    target: mongo-data
+    app: user
+    target: user
 spec:
   selector:
     matchLabels:
-      target: mongo-data
+      target: user
   replicas: 1
   template:
     metadata:
       labels:
-        target: mongo-data
+        target: user
     spec:
       containers:
         - name: container
-          image: mongo
+          image: user
           imagePullPolicy: IfNotPresent
+          env:
+            - name: GET_HOSTS_FROM
+              value: dns
+            - name: MONGO_URL
+              value: mongodb://mongo-service:27017/
           ports:
-            - containerPort: 27017
-            - containerPort: 80
+            - containerPort: 5000
       dnsPolicy: ClusterFirst
       restartPolicy: Always

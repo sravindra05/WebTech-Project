@@ -1,5 +1,5 @@
-FROM wtbase:latest
+FROM uac:latest
 WORKDIR /app
 COPY . /app
-EXPOSE 80
+EXPOSE 4000
 CMD ["python","uac.py"]

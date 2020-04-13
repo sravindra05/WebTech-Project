@@ -18,12 +18,13 @@ spec:
       containers:
         - name: classifier
           image: classifier
-          imagePullPolicy: Always
+          imagePullPolicy: IfNotPresent
           env:
             - name: GET_HOSTS_FROM
               value: dns
-          command: ["python3","./bin_class.py"]
+            - name: MONGO_URL
+              value: mongodb://mongo-service:27017/
           ports:
-            - containerPort: 80
+            - containerPort: 7001
       dnsPolicy: ClusterFirst
       restartPolicy: Always
