@@ -10,3 +10,34 @@ Steps:
 7. Inside the backend directory run:
 * `python3 uac/uac.py`
 * `python3 user/user.py`
+
+## Getting Started - Docker Compose version
+Steps:
+1. Install Docker on your device
+
+2. Go into `base_builder` directory `cd base_builder`
+
+3. Build the base image `docker build -t wtbase .`
+
+4. Go back to the parent directory
+
+5. Build the Server images:
+
+   ```bash
+   cd ./backend/auth
+   docker build -t uac .
+   cd ../..
+   cd ./backend/classifier
+   docker build -t classifier .
+   cd ../..
+   cd ./backend/eda
+   docker build -t eda .
+   cd ../..
+   cd ./backend/user
+   docker build -t user .
+   cd ../..
+   ```
+
+6. Build the front-end image `cd ./frontend && docker build -t frontend . && cd ..`
+7. Go to the deployments folder and run the docker compose file. `cd ./deployment && docker-compose up`
+8. Access the front-end at http://localhost:3000/
