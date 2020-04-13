@@ -204,7 +204,7 @@ class PlotForm extends React.Component {
               function insights() {
                 var t = plot_params[target];
                 var o = Math.floor(Math.random() * tot.length);
-                var p = 0;
+                var p = Math.floor(Math.random() * tot.length);
                 while (p == o) {
                   p = Math.floor(Math.random() * tot.length);
                 }
