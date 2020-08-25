@@ -1,0 +1,936 @@
+1590051331364	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileCl0R6a"
+1590051332285	addons.webextension.doh-rollout@mozilla.org	WARN	Loading extension 'doh-rollout@mozilla.org': Reading manifest: Invalid extension permission: networkStatus
+1590051333921	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1590051333921	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1590051333921	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1590051333921	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1590051336872	Marionette	INFO	Listening on port 35661
+1590051336886	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: http://localhost:3000/billboard.js, line 1: SyntaxError: expected expression, got '<'
+1590051366373	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofilewMpz48"
+1590051366955	addons.webextension.doh-rollout@mozilla.org	WARN	Loading extension 'doh-rollout@mozilla.org': Reading manifest: Invalid extension permission: networkStatus
+1590051368514	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1590051368514	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1590051368515	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1590051368515	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1590051370382	Marionette	INFO	Listening on port 34407
+1590051370397	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: http://localhost:3000/billboard.js, line 1: SyntaxError: expected expression, got '<'
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+JavaScript error: , line 0: UnknownError: The operation failed for reasons unrelated to the database itself and not covered by any other error code.
+1590051404525	Marionette	INFO	Stopped listening on port 35661
+1590051409583	Marionette	INFO	Stopped listening on port 34407
+1590056218169	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileSEx6L3"
+1590056218728	addons.webextension.doh-rollout@mozilla.org	WARN	Loading extension 'doh-rollout@mozilla.org': Reading manifest: Invalid extension permission: networkStatus
+1590056220144	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1590056220144	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1590056220145	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1590056220145	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1590056221999	Marionette	INFO	Listening on port 45439
+1590056222086	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: http://localhost:3000/billboard.js, line 1: SyntaxError: expected expression, got '<'
+JavaScript error: , line 0: UnknownError: The operation failed for reasons unrelated to the database itself and not covered by any other error code.
+1590056412759	Marionette	INFO	Stopped listening on port 45439
+1590056420337	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile2KrA8z"
+1590056420914	addons.webextension.doh-rollout@mozilla.org	WARN	Loading extension 'doh-rollout@mozilla.org': Reading manifest: Invalid extension permission: networkStatus
+1590056422551	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1590056422551	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1590056422551	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1590056422551	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1590056424376	Marionette	INFO	Listening on port 44911
+1590056424453	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: http://localhost:3000/billboard.js, line 1: SyntaxError: expected expression, got '<'
+1590056443296	Marionette	INFO	Stopped listening on port 44911
+1590056463946	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile5316mD"
+1590056465242	addons.webextension.doh-rollout@mozilla.org	WARN	Loading extension 'doh-rollout@mozilla.org': Reading manifest: Invalid extension permission: networkStatus
+1590056466708	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1590056466708	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1590056466708	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1590056466708	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1590056468516	Marionette	INFO	Listening on port 38431
+1590056468559	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: http://localhost:3000/billboard.js, line 1: SyntaxError: expected expression, got '<'
+1590056479178	Marionette	INFO	Stopped listening on port 38431
+1590056696734	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofiledIX1CR"
+1590056697309	addons.webextension.doh-rollout@mozilla.org	WARN	Loading extension 'doh-rollout@mozilla.org': Reading manifest: Invalid extension permission: networkStatus
+1590056698649	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1590056698649	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1590056698649	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1590056698649	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1590056700424	Marionette	INFO	Listening on port 41861
+1590056700455	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: http://localhost:3000/billboard.js, line 1: SyntaxError: expected expression, got '<'
+1590056713476	Marionette	INFO	Stopped listening on port 41861
+1590056873438	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileP6wH15"
+1590056873960	addons.webextension.doh-rollout@mozilla.org	WARN	Loading extension 'doh-rollout@mozilla.org': Reading manifest: Invalid extension permission: networkStatus
+1590056875536	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1590056875537	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1590056875537	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1590056875537	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1590056877340	Marionette	INFO	Listening on port 42301
+1590056877354	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: http://localhost:3000/billboard.js, line 1: SyntaxError: expected expression, got '<'
+1590056888867	Marionette	INFO	Stopped listening on port 42301
+1590056911367	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofilewn3418"
+1590056911872	addons.webextension.doh-rollout@mozilla.org	WARN	Loading extension 'doh-rollout@mozilla.org': Reading manifest: Invalid extension permission: networkStatus
+1590056913538	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1590056913538	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1590056913539	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1590056913539	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1590056915366	Marionette	INFO	Listening on port 38123
+1590056915384	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: http://localhost:3000/billboard.js, line 1: SyntaxError: expected expression, got '<'
+JavaScript error: http://localhost:3000/billboard.js, line 1: SyntaxError: expected expression, got '<'
+1590056936282	Marionette	INFO	Stopped listening on port 38123
+1590056967936	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile5BINke"
+1590056968525	addons.webextension.doh-rollout@mozilla.org	WARN	Loading extension 'doh-rollout@mozilla.org': Reading manifest: Invalid extension permission: networkStatus
+1590056970071	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1590056970072	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1590056970072	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1590056970072	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1590056972149	Marionette	INFO	Listening on port 32777
+1590056972253	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: http://localhost:3000/billboard.js, line 1: SyntaxError: expected expression, got '<'
+JavaScript error: http://localhost:3000/billboard.js, line 1: SyntaxError: expected expression, got '<'
+1590056992164	Marionette	INFO	Stopped listening on port 32777
+1590057021649	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofilelP46sQ"
+1590057022219	addons.webextension.doh-rollout@mozilla.org	WARN	Loading extension 'doh-rollout@mozilla.org': Reading manifest: Invalid extension permission: networkStatus
+1590057023941	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1590057023941	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1590057023941	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1590057023941	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1590057025936	Marionette	INFO	Listening on port 40295
+1590057025967	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: http://localhost:3000/billboard.js, line 1: SyntaxError: expected expression, got '<'
+1590057035607	Marionette	INFO	Stopped listening on port 40295
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1590057085879	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile9y3mev"
+1590057086454	addons.webextension.doh-rollout@mozilla.org	WARN	Loading extension 'doh-rollout@mozilla.org': Reading manifest: Invalid extension permission: networkStatus
+1590057087880	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1590057087880	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1590057087880	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1590057087880	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1590057089631	Marionette	INFO	Listening on port 33957
+1590057089698	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: http://localhost:3000/billboard.js, line 1: SyntaxError: expected expression, got '<'
+1590057113663	Marionette	INFO	Stopped listening on port 33957
+1590057153297	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileOcLwhq"
+1590057153816	addons.webextension.doh-rollout@mozilla.org	WARN	Loading extension 'doh-rollout@mozilla.org': Reading manifest: Invalid extension permission: networkStatus
+1590057155540	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1590057155540	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1590057155540	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1590057155540	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1590057157563	Marionette	INFO	Listening on port 44577
+1590057157612	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: http://localhost:3000/billboard.js, line 1: SyntaxError: expected expression, got '<'
+JavaScript error: http://localhost:3000/billboard.js, line 1: SyntaxError: expected expression, got '<'
+1590057177426	Marionette	INFO	Stopped listening on port 44577
+1590057242089	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileDDR8Bk"
+1590057242651	addons.webextension.doh-rollout@mozilla.org	WARN	Loading extension 'doh-rollout@mozilla.org': Reading manifest: Invalid extension permission: networkStatus
+1590057244082	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1590057244082	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1590057244082	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1590057244082	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1590057245844	Marionette	INFO	Listening on port 36647
+1590057245901	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: http://localhost:3000/billboard.js, line 1: SyntaxError: expected expression, got '<'
+JavaScript error: http://localhost:3000/billboard.js, line 1: SyntaxError: expected expression, got '<'
+1590057265703	Marionette	INFO	Stopped listening on port 36647
+1590057279892	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofiledcBmGf"
+1590057280497	addons.webextension.doh-rollout@mozilla.org	WARN	Loading extension 'doh-rollout@mozilla.org': Reading manifest: Invalid extension permission: networkStatus
+1590057282077	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1590057282077	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1590057282078	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1590057282078	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1590057283818	Marionette	INFO	Listening on port 41829
+1590057283908	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: http://localhost:3000/billboard.js, line 1: SyntaxError: expected expression, got '<'
+JavaScript error: http://localhost:3000/billboard.js, line 1: SyntaxError: expected expression, got '<'
+1590057312859	Marionette	INFO	Stopped listening on port 41829
+1590057362441	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofiler0p0wg"
+1590057363004	addons.webextension.doh-rollout@mozilla.org	WARN	Loading extension 'doh-rollout@mozilla.org': Reading manifest: Invalid extension permission: networkStatus
+1590057364461	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1590057364462	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1590057364462	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1590057364462	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1590057366286	Marionette	INFO	Listening on port 40811
+1590057366358	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: http://localhost:3000/billboard.js, line 1: SyntaxError: expected expression, got '<'
+JavaScript error: http://localhost:3000/billboard.js, line 1: SyntaxError: expected expression, got '<'
+JavaScript error: http://localhost:3000/billboard.js, line 1: SyntaxError: expected expression, got '<'
+JavaScript error: , line 0: UnknownError: The operation failed for reasons unrelated to the database itself and not covered by any other error code.
+1590058051805	Marionette	INFO	Stopped listening on port 40811
+1590058058273	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileLANKcX"
+1590058058916	addons.webextension.doh-rollout@mozilla.org	WARN	Loading extension 'doh-rollout@mozilla.org': Reading manifest: Invalid extension permission: networkStatus
+1590058060808	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1590058060808	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1590058060808	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1590058060808	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1590058063060	Marionette	INFO	Listening on port 38771
+1590058063087	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: http://localhost:3000/billboard.js, line 1: SyntaxError: expected expression, got '<'
+JavaScript error: http://localhost:3000/billboard.js, line 1: SyntaxError: expected expression, got '<'
+JavaScript error: http://localhost:3000/billboard.js, line 1: SyntaxError: expected expression, got '<'
+1590058113895	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileGjuw43"
+1590058114724	addons.webextension.doh-rollout@mozilla.org	WARN	Loading extension 'doh-rollout@mozilla.org': Reading manifest: Invalid extension permission: networkStatus
+1590058115472	Marionette	INFO	Stopped listening on port 38771
+1590058116473	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1590058116474	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1590058116474	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1590058116474	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1590058118310	Marionette	INFO	Listening on port 39283
+1590058118412	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: http://localhost:3000/billboard.js, line 1: SyntaxError: expected expression, got '<'
+JavaScript error: http://localhost:3000/billboard.js, line 1: SyntaxError: expected expression, got '<'
+JavaScript error: http://localhost:3000/billboard.js, line 1: SyntaxError: expected expression, got '<'
+JavaScript error: , line 0: UnknownError: The operation failed for reasons unrelated to the database itself and not covered by any other error code.
+1590058218879	Marionette	INFO	Stopped listening on port 39283
+1590058220795	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofilembTDGx"
+1590058221363	addons.webextension.doh-rollout@mozilla.org	WARN	Loading extension 'doh-rollout@mozilla.org': Reading manifest: Invalid extension permission: networkStatus
+1590058222846	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1590058222846	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1590058222847	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1590058222847	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1590058224710	Marionette	INFO	Listening on port 41001
+1590058224811	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: http://localhost:3000/billboard.js, line 1: SyntaxError: expected expression, got '<'
+JavaScript error: http://localhost:3000/billboard.js, line 1: SyntaxError: expected expression, got '<'
+JavaScript error: http://localhost:3000/billboard.js, line 1: SyntaxError: expected expression, got '<'
+JavaScript error: , line 0: UnknownError: The operation failed for reasons unrelated to the database itself and not covered by any other error code.
+1590058313046	Marionette	INFO	Stopped listening on port 41001
+1590058595805	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileUrkn2t"
+1590058596322	addons.webextension.doh-rollout@mozilla.org	WARN	Loading extension 'doh-rollout@mozilla.org': Reading manifest: Invalid extension permission: networkStatus
+1590058597710	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1590058597710	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1590058597711	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1590058597711	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1590058600052	Marionette	INFO	Listening on port 41951
+1590058600118	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: http://localhost:3000/billboard.js, line 1: SyntaxError: expected expression, got '<'
+JavaScript error: http://localhost:3000/billboard.js, line 1: SyntaxError: expected expression, got '<'
+JavaScript error: http://localhost:3000/billboard.js, line 1: SyntaxError: expected expression, got '<'
+1590058618600	Marionette	INFO	Stopped listening on port 41951
+1590058627440	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileF7HLJ0"
+1590058627948	addons.webextension.doh-rollout@mozilla.org	WARN	Loading extension 'doh-rollout@mozilla.org': Reading manifest: Invalid extension permission: networkStatus
+1590058629449	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1590058629449	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1590058629450	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1590058629450	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1590058631628	Marionette	INFO	Listening on port 35317
+1590058631661	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: http://localhost:3000/billboard.js, line 1: SyntaxError: expected expression, got '<'
+JavaScript error: http://localhost:3000/billboard.js, line 1: SyntaxError: expected expression, got '<'
+JavaScript error: http://localhost:3000/billboard.js, line 1: SyntaxError: expected expression, got '<'
+1590058669640	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile3FHFtM"
+1590058670352	addons.webextension.doh-rollout@mozilla.org	WARN	Loading extension 'doh-rollout@mozilla.org': Reading manifest: Invalid extension permission: networkStatus
+1590058672128	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1590058672128	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1590058672128	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1590058672128	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1590058673956	Marionette	INFO	Listening on port 44111
+1590058674061	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: http://localhost:3000/billboard.js, line 1: SyntaxError: expected expression, got '<'
+JavaScript error: http://localhost:3000/billboard.js, line 1: SyntaxError: expected expression, got '<'
+JavaScript error: , line 0: UnknownError: The operation failed for reasons unrelated to the database itself and not covered by any other error code.
+1590058680805	Marionette	INFO	Stopped listening on port 35317
+JavaScript error: http://localhost:3000/billboard.js, line 1: SyntaxError: expected expression, got '<'
+1590058740181	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofilesu3YKX"
+1590058740753	addons.webextension.doh-rollout@mozilla.org	WARN	Loading extension 'doh-rollout@mozilla.org': Reading manifest: Invalid extension permission: networkStatus
+1590058742159	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1590058742159	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1590058742159	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1590058742159	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1590058744122	Marionette	INFO	Listening on port 36495
+1590058744195	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: http://localhost:3000/billboard.js, line 1: SyntaxError: expected expression, got '<'
+JavaScript error: http://localhost:3000/billboard.js, line 1: SyntaxError: expected expression, got '<'
+JavaScript error: http://localhost:3000/billboard.js, line 1: SyntaxError: expected expression, got '<'
+1590058760581	Marionette	WARN	TimedPromise timed out after 0 ms: stacktrace:
+TimedPromise/<@chrome://marionette/content/sync.js:245:13
+TimedPromise@chrome://marionette/content/sync.js:230:10
+Sleep@chrome://marionette/content/sync.js:283:10
+dispatchPause@chrome://marionette/content/action.js:1482:10
+toEvents/<@chrome://marionette/content/action.js:1156:16
+action.dispatchTickActions@chrome://marionette/content/action.js:1060:35
+action.dispatch/chainEvents<@chrome://marionette/content/action.js:1028:20
+action.dispatch@chrome://marionette/content/action.js:1034:5
+performActions@chrome://marionette/content/listener.js:853:16
+dispatch/</req<@chrome://marionette/content/listener.js:527:14
+dispatch/<@chrome://marionette/content/listener.js:520:15
+1590058760584	Marionette	WARN	TimedPromise timed out after 0 ms: stacktrace:
+TimedPromise/<@chrome://marionette/content/sync.js:245:13
+TimedPromise@chrome://marionette/content/sync.js:230:10
+Sleep@chrome://marionette/content/sync.js:283:10
+dispatchPause@chrome://marionette/content/action.js:1482:10
+toEvents/<@chrome://marionette/content/action.js:1156:16
+action.dispatchTickActions@chrome://marionette/content/action.js:1060:35
+action.dispatch/chainEvents<@chrome://marionette/content/action.js:1028:20
+1590058760585	Marionette	WARN	TimedPromise timed out after 0 ms: stacktrace:
+TimedPromise/<@chrome://marionette/content/sync.js:245:13
+TimedPromise@chrome://marionette/content/sync.js:230:10
+Sleep@chrome://marionette/content/sync.js:283:10
+dispatchPause@chrome://marionette/content/action.js:1482:10
+toEvents/<@chrome://marionette/content/action.js:1156:16
+action.dispatchTickActions@chrome://marionette/content/action.js:1060:35
+action.dispatch/chainEvents<@chrome://marionette/content/action.js:1028:20
+JavaScript error: , line 0: UnknownError: The operation failed for reasons unrelated to the database itself and not covered by any other error code.
+1590058908552	Marionette	INFO	Stopped listening on port 36495
+JavaScript error: , line 0: UnknownError: The operation failed for reasons unrelated to the database itself and not covered by any other error code.
+1590058968714	Marionette	INFO	Stopped listening on port 44111
+1590059221071	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofilehjtgb2"
+1590059221642	addons.webextension.doh-rollout@mozilla.org	WARN	Loading extension 'doh-rollout@mozilla.org': Reading manifest: Invalid extension permission: networkStatus
+1590059223185	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1590059223185	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1590059223185	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1590059223185	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1590059225177	Marionette	INFO	Listening on port 37927
+1590059225193	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: http://localhost:3000/billboard.js, line 1: SyntaxError: expected expression, got '<'
+JavaScript error: http://localhost:3000/billboard.js, line 1: SyntaxError: expected expression, got '<'
+JavaScript error: http://localhost:3000/billboard.js, line 1: SyntaxError: expected expression, got '<'
+1590059249210	Marionette	WARN	TimedPromise timed out after 0 ms: stacktrace:
+TimedPromise/<@chrome://marionette/content/sync.js:245:13
+TimedPromise@chrome://marionette/content/sync.js:230:10
+Sleep@chrome://marionette/content/sync.js:283:10
+dispatchPause@chrome://marionette/content/action.js:1482:10
+toEvents/<@chrome://marionette/content/action.js:1156:16
+action.dispatchTickActions@chrome://marionette/content/action.js:1060:35
+action.dispatch/chainEvents<@chrome://marionette/content/action.js:1028:20
+action.dispatch@chrome://marionette/content/action.js:1034:5
+performActions@chrome://marionette/content/listener.js:853:16
+dispatch/</req<@chrome://marionette/content/listener.js:527:14
+dispatch/<@chrome://marionette/content/listener.js:520:15
+1590059249214	Marionette	WARN	TimedPromise timed out after 0 ms: stacktrace:
+TimedPromise/<@chrome://marionette/content/sync.js:245:13
+TimedPromise@chrome://marionette/content/sync.js:230:10
+Sleep@chrome://marionette/content/sync.js:283:10
+dispatchPause@chrome://marionette/content/action.js:1482:10
+toEvents/<@chrome://marionette/content/action.js:1156:16
+action.dispatchTickActions@chrome://marionette/content/action.js:1060:35
+action.dispatch/chainEvents<@chrome://marionette/content/action.js:1028:20
+1590059249215	Marionette	WARN	TimedPromise timed out after 0 ms: stacktrace:
+TimedPromise/<@chrome://marionette/content/sync.js:245:13
+TimedPromise@chrome://marionette/content/sync.js:230:10
+Sleep@chrome://marionette/content/sync.js:283:10
+dispatchPause@chrome://marionette/content/action.js:1482:10
+toEvents/<@chrome://marionette/content/action.js:1156:16
+action.dispatchTickActions@chrome://marionette/content/action.js:1060:35
+action.dispatch/chainEvents<@chrome://marionette/content/action.js:1028:20
+JavaScript error: http://localhost:3000/billboard.js, line 1: SyntaxError: expected expression, got '<'
+1590059262588	Marionette	WARN	TimedPromise timed out after 0 ms: stacktrace:
+TimedPromise/<@chrome://marionette/content/sync.js:245:13
+TimedPromise@chrome://marionette/content/sync.js:230:10
+Sleep@chrome://marionette/content/sync.js:283:10
+dispatchPause@chrome://marionette/content/action.js:1482:10
+toEvents/<@chrome://marionette/content/action.js:1156:16
+action.dispatchTickActions@chrome://marionette/content/action.js:1060:35
+action.dispatch/chainEvents<@chrome://marionette/content/action.js:1028:20
+action.dispatch@chrome://marionette/content/action.js:1034:5
+performActions@chrome://marionette/content/listener.js:853:16
+dispatch/</req<@chrome://marionette/content/listener.js:527:14
+dispatch/<@chrome://marionette/content/listener.js:520:15
+1590059262592	Marionette	WARN	TimedPromise timed out after 0 ms: stacktrace:
+TimedPromise/<@chrome://marionette/content/sync.js:245:13
+TimedPromise@chrome://marionette/content/sync.js:230:10
+Sleep@chrome://marionette/content/sync.js:283:10
+dispatchPause@chrome://marionette/content/action.js:1482:10
+toEvents/<@chrome://marionette/content/action.js:1156:16
+action.dispatchTickActions@chrome://marionette/content/action.js:1060:35
+action.dispatch/chainEvents<@chrome://marionette/content/action.js:1028:20
+1590059262595	Marionette	WARN	TimedPromise timed out after 0 ms: stacktrace:
+TimedPromise/<@chrome://marionette/content/sync.js:245:13
+TimedPromise@chrome://marionette/content/sync.js:230:10
+Sleep@chrome://marionette/content/sync.js:283:10
+dispatchPause@chrome://marionette/content/action.js:1482:10
+toEvents/<@chrome://marionette/content/action.js:1156:16
+action.dispatchTickActions@chrome://marionette/content/action.js:1060:35
+action.dispatch/chainEvents<@chrome://marionette/content/action.js:1028:20
+JavaScript error: http://localhost:3000/billboard.js, line 1: SyntaxError: expected expression, got '<'
+1590059275817	Marionette	WARN	TimedPromise timed out after 0 ms: stacktrace:
+TimedPromise/<@chrome://marionette/content/sync.js:245:13
+TimedPromise@chrome://marionette/content/sync.js:230:10
+Sleep@chrome://marionette/content/sync.js:283:10
+dispatchPause@chrome://marionette/content/action.js:1482:10
+toEvents/<@chrome://marionette/content/action.js:1156:16
+action.dispatchTickActions@chrome://marionette/content/action.js:1060:35
+action.dispatch/chainEvents<@chrome://marionette/content/action.js:1028:20
+action.dispatch@chrome://marionette/content/action.js:1034:5
+performActions@chrome://marionette/content/listener.js:853:16
+dispatch/</req<@chrome://marionette/content/listener.js:527:14
+dispatch/<@chrome://marionette/content/listener.js:520:15
+1590059275823	Marionette	WARN	TimedPromise timed out after 0 ms: stacktrace:
+TimedPromise/<@chrome://marionette/content/sync.js:245:13
+TimedPromise@chrome://marionette/content/sync.js:230:10
+Sleep@chrome://marionette/content/sync.js:283:10
+dispatchPause@chrome://marionette/content/action.js:1482:10
+toEvents/<@chrome://marionette/content/action.js:1156:16
+action.dispatchTickActions@chrome://marionette/content/action.js:1060:35
+action.dispatch/chainEvents<@chrome://marionette/content/action.js:1028:20
+1590059275826	Marionette	WARN	TimedPromise timed out after 0 ms: stacktrace:
+TimedPromise/<@chrome://marionette/content/sync.js:245:13
+TimedPromise@chrome://marionette/content/sync.js:230:10
+Sleep@chrome://marionette/content/sync.js:283:10
+dispatchPause@chrome://marionette/content/action.js:1482:10
+toEvents/<@chrome://marionette/content/action.js:1156:16
+action.dispatchTickActions@chrome://marionette/content/action.js:1060:35
+action.dispatch/chainEvents<@chrome://marionette/content/action.js:1028:20
+JavaScript error: , line 0: UnknownError: The operation failed for reasons unrelated to the database itself and not covered by any other error code.
+1590059285896	Marionette	INFO	Stopped listening on port 37927
+1590059446740	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofilecTG028"
+1590059447310	addons.webextension.doh-rollout@mozilla.org	WARN	Loading extension 'doh-rollout@mozilla.org': Reading manifest: Invalid extension permission: networkStatus
+1590059448765	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1590059448765	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1590059448765	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1590059448765	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1590059450622	Marionette	INFO	Listening on port 36529
+1590059450670	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: http://localhost:3000/billboard.js, line 1: SyntaxError: expected expression, got '<'
+JavaScript error: http://localhost:3000/billboard.js, line 1: SyntaxError: expected expression, got '<'
+JavaScript error: http://localhost:3000/billboard.js, line 1: SyntaxError: expected expression, got '<'
+JavaScript error: http://localhost:3000/billboard.js, line 1: SyntaxError: expected expression, got '<'
+JavaScript error: http://localhost:3000/billboard.js, line 1: SyntaxError: expected expression, got '<'
+1590059497982	Marionette	INFO	Stopped listening on port 36529
+JavaScript error: , line 0: UnknownError: The operation failed for reasons unrelated to the database itself and not covered by any other error code.
+1590059540569	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileybUryG"
+1590059541127	addons.webextension.doh-rollout@mozilla.org	WARN	Loading extension 'doh-rollout@mozilla.org': Reading manifest: Invalid extension permission: networkStatus
+1590059542702	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1590059542702	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1590059542703	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1590059542703	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1590059544582	Marionette	INFO	Listening on port 45647
+1590059544704	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: http://localhost:3000/billboard.js, line 1: SyntaxError: expected expression, got '<'
+JavaScript error: http://localhost:3000/billboard.js, line 1: SyntaxError: expected expression, got '<'
+JavaScript error: http://localhost:3000/billboard.js, line 1: SyntaxError: expected expression, got '<'
+JavaScript error: http://localhost:3000/billboard.js, line 1: SyntaxError: expected expression, got '<'
+JavaScript error: http://localhost:3000/billboard.js, line 1: SyntaxError: expected expression, got '<'
+1590059884335	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileKq1VsR"
+1590059884899	addons.webextension.doh-rollout@mozilla.org	WARN	Loading extension 'doh-rollout@mozilla.org': Reading manifest: Invalid extension permission: networkStatus
+1590059886557	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1590059886557	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1590059886557	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1590059886557	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1590059888296	Marionette	INFO	Listening on port 45055
+1590059888351	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: http://localhost:3000/billboard.js, line 1: SyntaxError: expected expression, got '<'
+JavaScript error: http://localhost:3000/billboard.js, line 1: SyntaxError: expected expression, got '<'
+JavaScript error: http://localhost:3000/billboard.js, line 1: SyntaxError: expected expression, got '<'
+JavaScript error: http://localhost:3000/billboard.js, line 1: SyntaxError: expected expression, got '<'
+JavaScript error: http://localhost:3000/billboard.js, line 1: SyntaxError: expected expression, got '<'
+1590059934155	Marionette	INFO	Stopped listening on port 45055
+JavaScript error: , line 0: UnknownError: The operation failed for reasons unrelated to the database itself and not covered by any other error code.
+JavaScript error: , line 0: UnknownError: The operation failed for reasons unrelated to the database itself and not covered by any other error code.
+1590061712347	Marionette	INFO	Stopped listening on port 45647
+1590063055028	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile5tS32W"
+1590063055608	addons.webextension.doh-rollout@mozilla.org	WARN	Loading extension 'doh-rollout@mozilla.org': Reading manifest: Invalid extension permission: networkStatus
+1590063057227	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1590063057227	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1590063057227	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1590063057227	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1590063059015	Marionette	INFO	Listening on port 39427
+1590063059042	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: http://localhost:3000/billboard.js, line 1: SyntaxError: expected expression, got '<'
+JavaScript error: http://localhost:3000/billboard.js, line 1: SyntaxError: expected expression, got '<'
+1590063094950	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofilegtUE9a"
+1590063095677	addons.webextension.doh-rollout@mozilla.org	WARN	Loading extension 'doh-rollout@mozilla.org': Reading manifest: Invalid extension permission: networkStatus
+1590063097622	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1590063097622	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1590063097622	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1590063097623	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1590063097656	Marionette	INFO	Stopped listening on port 39427
+1590063099454	Marionette	INFO	Listening on port 36615
+1590063099473	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: http://localhost:3000/billboard.js, line 1: SyntaxError: expected expression, got '<'
+JavaScript error: http://localhost:3000/billboard.js, line 1: SyntaxError: expected expression, got '<'
+JavaScript error: http://localhost:3000/plot/billboard.js, line 1: SyntaxError: expected expression, got '<'
+1590063173502	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile6wr0TE"
+JavaScript error: , line 0: UnknownError: The operation failed for reasons unrelated to the database itself and not covered by any other error code.
+1590063173890	Marionette	INFO	Stopped listening on port 36615
+1590063174260	addons.webextension.doh-rollout@mozilla.org	WARN	Loading extension 'doh-rollout@mozilla.org': Reading manifest: Invalid extension permission: networkStatus
+1590063175735	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1590063175735	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1590063175735	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1590063175735	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1590063177726	Marionette	INFO	Listening on port 36359
+1590063177824	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: http://localhost:3000/billboard.js, line 1: SyntaxError: expected expression, got '<'
+JavaScript error: http://localhost:3000/billboard.js, line 1: SyntaxError: expected expression, got '<'
+JavaScript error: http://localhost:3000/plot/billboard.js, line 1: SyntaxError: expected expression, got '<'
+JavaScript error: , line 0: UnknownError: The operation failed for reasons unrelated to the database itself and not covered by any other error code.
+1590063359261	Marionette	INFO	Stopped listening on port 36359
+1590063361868	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile1R1Hsq"
+1590063362446	addons.webextension.doh-rollout@mozilla.org	WARN	Loading extension 'doh-rollout@mozilla.org': Reading manifest: Invalid extension permission: networkStatus
+1590063364795	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1590063364795	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1590063364795	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1590063364795	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1590063366604	Marionette	INFO	Listening on port 46125
+1590063366689	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: http://localhost:3000/billboard.js, line 1: SyntaxError: expected expression, got '<'
+JavaScript error: http://localhost:3000/billboard.js, line 1: SyntaxError: expected expression, got '<'
+JavaScript error: http://localhost:3000/plot/billboard.js, line 1: SyntaxError: expected expression, got '<'
+1590063403314	Marionette	INFO	Stopped listening on port 46125
+1590063563922	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofilejRqkZR"
+1590063564512	addons.webextension.doh-rollout@mozilla.org	WARN	Loading extension 'doh-rollout@mozilla.org': Reading manifest: Invalid extension permission: networkStatus
+1590063566259	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1590063566259	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1590063566260	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1590063566260	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1590063568085	Marionette	INFO	Listening on port 44293
+1590063568138	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: http://localhost:3000/billboard.js, line 1: SyntaxError: expected expression, got '<'
+JavaScript error: http://localhost:3000/billboard.js, line 1: SyntaxError: expected expression, got '<'
+JavaScript error: http://localhost:3000/plot/billboard.js, line 1: SyntaxError: expected expression, got '<'
+1590063601009	Marionette	INFO	Stopped listening on port 44293
+1590064014407	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileDYeOc9"
+1590064015047	addons.webextension.doh-rollout@mozilla.org	WARN	Loading extension 'doh-rollout@mozilla.org': Reading manifest: Invalid extension permission: networkStatus
+1590064016516	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1590064016516	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1590064016516	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1590064016516	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1590064018388	Marionette	INFO	Listening on port 45193
+1590064018434	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: http://localhost:3000/billboard.js, line 1: SyntaxError: expected expression, got '<'
+JavaScript error: http://localhost:3000/billboard.js, line 1: SyntaxError: expected expression, got '<'
+JavaScript error: http://localhost:3000/plot/billboard.js, line 1: SyntaxError: expected expression, got '<'
+JavaScript error: http://localhost:3000/plot/billboard.js, line 1: SyntaxError: expected expression, got '<'
+1590064061710	Marionette	INFO	Stopped listening on port 45193
+1590064465382	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofilevxfcE0"
+1590064466049	addons.webextension.doh-rollout@mozilla.org	WARN	Loading extension 'doh-rollout@mozilla.org': Reading manifest: Invalid extension permission: networkStatus
+1590064467689	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1590064467689	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1590064467689	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1590064467689	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1590064469483	Marionette	INFO	Listening on port 36947
+1590064469497	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: http://localhost:3000/billboard.js, line 1: SyntaxError: expected expression, got '<'
+JavaScript error: http://localhost:3000/billboard.js, line 1: SyntaxError: expected expression, got '<'
+JavaScript error: http://localhost:3000/view/billboard.js, line 1: SyntaxError: expected expression, got '<'
+JavaScript error: http://localhost:3000/view/billboard.js, line 1: SyntaxError: expected expression, got '<'
+1590064495683	Marionette	INFO	Stopped listening on port 36947
+1590064593542	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile7bT65M"
+1590064594108	addons.webextension.doh-rollout@mozilla.org	WARN	Loading extension 'doh-rollout@mozilla.org': Reading manifest: Invalid extension permission: networkStatus
+1590064595586	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1590064595586	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1590064595586	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1590064595586	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1590064597266	Marionette	INFO	Listening on port 36737
+1590064597360	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: http://localhost:3000/billboard.js, line 1: SyntaxError: expected expression, got '<'
+JavaScript error: http://localhost:3000/billboard.js, line 1: SyntaxError: expected expression, got '<'
+JavaScript error: http://localhost:3000/view/billboard.js, line 1: SyntaxError: expected expression, got '<'
+JavaScript error: http://localhost:3000/view/billboard.js, line 1: SyntaxError: expected expression, got '<'
+1590064626940	Marionette	INFO	Stopped listening on port 36737
+1590065530583	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileMSRXG3"
+1590065531099	addons.webextension.doh-rollout@mozilla.org	WARN	Loading extension 'doh-rollout@mozilla.org': Reading manifest: Invalid extension permission: networkStatus
+1590065532550	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1590065532550	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1590065532550	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1590065532550	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1590065534329	Marionette	INFO	Listening on port 37207
+1590065534396	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: http://localhost:3000/billboard.js, line 1: SyntaxError: expected expression, got '<'
+JavaScript error: http://localhost:3000/billboard.js, line 1: SyntaxError: expected expression, got '<'
+JavaScript error: http://localhost:3000/train/billboard.js, line 1: SyntaxError: expected expression, got '<'
+JavaScript error: , line 0: UnknownError: The operation failed for reasons unrelated to the database itself and not covered by any other error code.
+1590065684646	Marionette	INFO	Stopped listening on port 37207
+1590065688462	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofiled7n77z"
+1590065689032	addons.webextension.doh-rollout@mozilla.org	WARN	Loading extension 'doh-rollout@mozilla.org': Reading manifest: Invalid extension permission: networkStatus
+1590065690488	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1590065690488	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1590065690488	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1590065690488	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1590065692247	Marionette	INFO	Listening on port 38263
+1590065692275	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: http://localhost:3000/billboard.js, line 1: SyntaxError: expected expression, got '<'
+JavaScript error: http://localhost:3000/billboard.js, line 1: SyntaxError: expected expression, got '<'
+JavaScript error: http://localhost:3000/train/billboard.js, line 1: SyntaxError: expected expression, got '<'
+JavaScript error: http://localhost:3000/predict/billboard.js, line 1: SyntaxError: expected expression, got '<'
+JavaScript error: http://localhost:3000/predict/billboard.js, line 1: SyntaxError: expected expression, got '<'
+1590065729498	Marionette	INFO	Stopped listening on port 38263
+1590065759557	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileo8EJIZ"
+1590065760474	addons.webextension.doh-rollout@mozilla.org	WARN	Loading extension 'doh-rollout@mozilla.org': Reading manifest: Invalid extension permission: networkStatus
+1590065761944	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1590065761944	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1590065761944	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1590065761945	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1590065764022	Marionette	INFO	Listening on port 35095
+1590065764074	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: http://localhost:3000/billboard.js, line 1: SyntaxError: expected expression, got '<'
+JavaScript error: http://localhost:3000/billboard.js, line 1: SyntaxError: expected expression, got '<'
+JavaScript error: http://localhost:3000/train/billboard.js, line 1: SyntaxError: expected expression, got '<'
+JavaScript error: http://localhost:3000/predict/billboard.js, line 1: SyntaxError: expected expression, got '<'
+JavaScript error: http://localhost:3000/predict/billboard.js, line 1: SyntaxError: expected expression, got '<'
+1590065811456	Marionette	INFO	Stopped listening on port 35095
+JavaScript error: , line 0: UnknownError: The operation failed for reasons unrelated to the database itself and not covered by any other error code.
+1590065949569	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofilea6XYpp"
+1590065950092	addons.webextension.doh-rollout@mozilla.org	WARN	Loading extension 'doh-rollout@mozilla.org': Reading manifest: Invalid extension permission: networkStatus
+1590065951543	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1590065951544	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1590065951544	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1590065951544	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1590065953345	Marionette	INFO	Listening on port 45155
+1590065953381	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: http://localhost:3000/billboard.js, line 1: SyntaxError: expected expression, got '<'
+JavaScript error: http://localhost:3000/billboard.js, line 1: SyntaxError: expected expression, got '<'
+1590065975151	Marionette	INFO	Stopped listening on port 45155
+1590066824081	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile3DDiy6"
+1590066824652	addons.webextension.doh-rollout@mozilla.org	WARN	Loading extension 'doh-rollout@mozilla.org': Reading manifest: Invalid extension permission: networkStatus
+1590066826076	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1590066826076	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1590066826076	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1590066826076	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1590066827962	Marionette	INFO	Listening on port 41283
+1590066827990	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: http://localhost:3000/billboard.js, line 1: SyntaxError: expected expression, got '<'
+JavaScript error: http://localhost:3000/billboard.js, line 1: SyntaxError: expected expression, got '<'
+1590066837139	Marionette	INFO	Stopped listening on port 41283
+1590066840966	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileJgGkWm"
+1590066841619	addons.webextension.doh-rollout@mozilla.org	WARN	Loading extension 'doh-rollout@mozilla.org': Reading manifest: Invalid extension permission: networkStatus
+1590066843112	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1590066843113	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1590066843113	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1590066843113	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1590066845245	Marionette	INFO	Listening on port 45901
+1590066845290	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: http://localhost:3000/billboard.js, line 1: SyntaxError: expected expression, got '<'
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+1590067296329	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileZtdABf"
+1590067296936	addons.webextension.doh-rollout@mozilla.org	WARN	Loading extension 'doh-rollout@mozilla.org': Reading manifest: Invalid extension permission: networkStatus
+1590067298468	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1590067298469	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1590067298469	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1590067298469	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1590067300523	Marionette	INFO	Listening on port 45843
+1590067300546	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: http://localhost:3000/billboard.js, line 1: SyntaxError: expected expression, got '<'
+JavaScript error: http://localhost:3000/billboard.js, line 1: SyntaxError: expected expression, got '<'
+1590067312122	Marionette	INFO	Stopped listening on port 45843
+1590067316857	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile3fO8Wt"
+1590067317484	addons.webextension.doh-rollout@mozilla.org	WARN	Loading extension 'doh-rollout@mozilla.org': Reading manifest: Invalid extension permission: networkStatus
+1590067319050	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1590067319050	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1590067319050	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1590067319050	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1590067321031	Marionette	INFO	Listening on port 39039
+1590067321070	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: http://localhost:3000/billboard.js, line 1: SyntaxError: expected expression, got '<'
+1590067333855	Marionette	INFO	Stopped listening on port 39039
+Exiting due to channel error.
+1590067464141	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileZ2URvj"
+1590067464723	addons.webextension.doh-rollout@mozilla.org	WARN	Loading extension 'doh-rollout@mozilla.org': Reading manifest: Invalid extension permission: networkStatus
+1590067466272	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1590067466272	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1590067466272	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1590067466272	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1590067468311	Marionette	INFO	Listening on port 34991
+1590067468353	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: http://localhost:3000/billboard.js, line 1: SyntaxError: expected expression, got '<'
+JavaScript error: http://localhost:3000/billboard.js, line 1: SyntaxError: expected expression, got '<'
+1590067477724	Marionette	INFO	Stopped listening on port 34991
+JavaScript error: resource://gre/modules/UrlClassifierListManager.jsm, line 691: TypeError: this.tablesData[table] is undefined
+1590067483533	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileIURrJx"
+1590067484154	addons.webextension.doh-rollout@mozilla.org	WARN	Loading extension 'doh-rollout@mozilla.org': Reading manifest: Invalid extension permission: networkStatus
+1590067485774	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1590067485774	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1590067485775	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1590067485775	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1590067488585	Marionette	INFO	Listening on port 36893
+1590067488649	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: http://localhost:3000/billboard.js, line 1: SyntaxError: expected expression, got '<'
+1590067500393	Marionette	INFO	Stopped listening on port 36893
+1590067504795	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileUFpDeh"
+1590067505410	addons.webextension.doh-rollout@mozilla.org	WARN	Loading extension 'doh-rollout@mozilla.org': Reading manifest: Invalid extension permission: networkStatus
+1590067507002	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1590067507002	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1590067507003	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1590067507003	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1590067509069	Marionette	INFO	Listening on port 45279
+1590067509108	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: http://localhost:3000/billboard.js, line 1: SyntaxError: expected expression, got '<'
+1590067520525	Marionette	INFO	Stopped listening on port 45279
+1590067525123	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofilerIBzQy"
+1590067525706	addons.webextension.doh-rollout@mozilla.org	WARN	Loading extension 'doh-rollout@mozilla.org': Reading manifest: Invalid extension permission: networkStatus
+1590067527338	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1590067527338	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1590067527338	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1590067527338	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1590067529356	Marionette	INFO	Listening on port 37025
+1590067529441	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: http://localhost:3000/billboard.js, line 1: SyntaxError: expected expression, got '<'
+1590067541490	Marionette	INFO	Stopped listening on port 37025
+1590067545468	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileA5OQy5"
+1590067546104	addons.webextension.doh-rollout@mozilla.org	WARN	Loading extension 'doh-rollout@mozilla.org': Reading manifest: Invalid extension permission: networkStatus
+1590067547734	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1590067547734	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1590067547734	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1590067547734	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1590067550241	Marionette	INFO	Listening on port 36031
+1590067550318	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: http://localhost:3000/billboard.js, line 1: SyntaxError: expected expression, got '<'
+JavaScript error: http://localhost:3000/billboard.js, line 1: SyntaxError: expected expression, got '<'
+1590067566678	Marionette	INFO	Stopped listening on port 36031
+1590067570429	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile2v0pel"
+1590067571069	addons.webextension.doh-rollout@mozilla.org	WARN	Loading extension 'doh-rollout@mozilla.org': Reading manifest: Invalid extension permission: networkStatus
+1590067572608	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1590067572608	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1590067572609	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1590067572609	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1590067574684	Marionette	INFO	Listening on port 45331
+1590067574744	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: http://localhost:3000/billboard.js, line 1: SyntaxError: expected expression, got '<'
+JavaScript error: http://localhost:3000/billboard.js, line 1: SyntaxError: expected expression, got '<'
+JavaScript error: http://localhost:3000/billboard.js, line 1: SyntaxError: expected expression, got '<'
+JavaScript error: http://localhost:3000/billboard.js, line 1: SyntaxError: expected expression, got '<'
+JavaScript error: http://localhost:3000/billboard.js, line 1: SyntaxError: expected expression, got '<'
+1590067621337	Marionette	INFO	Stopped listening on port 45331
+JavaScript error: , line 0: UnknownError: The operation failed for reasons unrelated to the database itself and not covered by any other error code.
+1590067623279	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile5kLc2c"
+1590067623920	addons.webextension.doh-rollout@mozilla.org	WARN	Loading extension 'doh-rollout@mozilla.org': Reading manifest: Invalid extension permission: networkStatus
+1590067626132	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1590067626132	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1590067626132	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1590067626132	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1590067628187	Marionette	INFO	Listening on port 34627
+1590067628195	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: http://localhost:3000/billboard.js, line 1: SyntaxError: expected expression, got '<'
+JavaScript error: http://localhost:3000/billboard.js, line 1: SyntaxError: expected expression, got '<'
+JavaScript error: http://localhost:3000/view/billboard.js, line 1: SyntaxError: expected expression, got '<'
+JavaScript error: http://localhost:3000/view/billboard.js, line 1: SyntaxError: expected expression, got '<'
+1590067658203	Marionette	INFO	Stopped listening on port 34627
+1590067661404	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofilexEQfMw"
+1590067661987	addons.webextension.doh-rollout@mozilla.org	WARN	Loading extension 'doh-rollout@mozilla.org': Reading manifest: Invalid extension permission: networkStatus
+1590067663483	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1590067663483	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1590067663484	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1590067663484	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1590067665719	Marionette	INFO	Listening on port 36207
+1590067665816	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: http://localhost:3000/billboard.js, line 1: SyntaxError: expected expression, got '<'
+JavaScript error: http://localhost:3000/billboard.js, line 1: SyntaxError: expected expression, got '<'
+JavaScript error: http://localhost:3000/plot/billboard.js, line 1: SyntaxError: expected expression, got '<'
+JavaScript error: http://localhost:3000/plot/billboard.js, line 1: SyntaxError: expected expression, got '<'
+1590067702079	Marionette	INFO	Stopped listening on port 36207
+JavaScript error: , line 0: UnknownError: The operation failed for reasons unrelated to the database itself and not covered by any other error code.
+1590067704200	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofilesqCljf"
+1590067704792	addons.webextension.doh-rollout@mozilla.org	WARN	Loading extension 'doh-rollout@mozilla.org': Reading manifest: Invalid extension permission: networkStatus
+1590067706406	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1590067706406	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1590067706406	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1590067706406	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1590067708583	Marionette	INFO	Listening on port 34499
+1590067708614	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: http://localhost:3000/billboard.js, line 1: SyntaxError: expected expression, got '<'
+JavaScript error: http://localhost:3000/billboard.js, line 1: SyntaxError: expected expression, got '<'
+JavaScript error: http://localhost:3000/train/billboard.js, line 1: SyntaxError: expected expression, got '<'
+1590067733611	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileYyRC36"
+1590067734417	addons.webextension.doh-rollout@mozilla.org	WARN	Loading extension 'doh-rollout@mozilla.org': Reading manifest: Invalid extension permission: networkStatus
+1590067736788	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1590067736789	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1590067736789	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1590067736789	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1590067739152	Marionette	INFO	Listening on port 35299
+1590067739230	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: http://localhost:3000/billboard.js, line 1: SyntaxError: expected expression, got '<'
+JavaScript error: http://localhost:3000/billboard.js, line 1: SyntaxError: expected expression, got '<'
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+[GFX1-]: Receive IPC close with reason=AbnormalShutdown
+Exiting due to channel error.
+Exiting due to channel error.
+1590067831439	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileWZ8Rh2"
+1590067832069	addons.webextension.doh-rollout@mozilla.org	WARN	Loading extension 'doh-rollout@mozilla.org': Reading manifest: Invalid extension permission: networkStatus
+1590067833654	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1590067833655	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1590067833655	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1590067833655	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1590067835795	Marionette	INFO	Listening on port 45721
+1590067835853	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: http://localhost:3000/billboard.js, line 1: SyntaxError: expected expression, got '<'
+JavaScript error: http://localhost:3000/billboard.js, line 1: SyntaxError: expected expression, got '<'
+JavaScript error: http://localhost:3000/train/billboard.js, line 1: SyntaxError: expected expression, got '<'
+JavaScript error: http://localhost:3000/predict/billboard.js, line 1: SyntaxError: expected expression, got '<'
+JavaScript error: http://localhost:3000/predict/billboard.js, line 1: SyntaxError: expected expression, got '<'
+1590067883266	Marionette	INFO	Stopped listening on port 45721
+JavaScript error: , line 0: UnknownError: The operation failed for reasons unrelated to the database itself and not covered by any other error code.
+1590067887490	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileU7m0dP"
+1590067888090	addons.webextension.doh-rollout@mozilla.org	WARN	Loading extension 'doh-rollout@mozilla.org': Reading manifest: Invalid extension permission: networkStatus
+1590067889584	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1590067889584	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1590067889584	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1590067889584	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1590067891690	Marionette	INFO	Listening on port 37177
+1590067891706	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: http://localhost:3000/billboard.js, line 1: SyntaxError: expected expression, got '<'
+JavaScript error: http://localhost:3000/billboard.js, line 1: SyntaxError: expected expression, got '<'
+JavaScript error: http://localhost:3000/train/billboard.js, line 1: SyntaxError: expected expression, got '<'
+JavaScript error: http://localhost:3000/predict/billboard.js, line 1: SyntaxError: expected expression, got '<'
+JavaScript error: http://localhost:3000/predict/billboard.js, line 1: SyntaxError: expected expression, got '<'
+1590067943938	Marionette	INFO	Stopped listening on port 37177
+JavaScript error: , line 0: UnknownError: The operation failed for reasons unrelated to the database itself and not covered by any other error code.
+1590068089354	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileDVPWTA"
+1590068089923	addons.webextension.doh-rollout@mozilla.org	WARN	Loading extension 'doh-rollout@mozilla.org': Reading manifest: Invalid extension permission: networkStatus
+1590068091422	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1590068091422	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1590068091422	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1590068091423	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1590068093653	Marionette	INFO	Listening on port 40295
+1590068093668	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: http://localhost:3000/billboard.js, line 1: SyntaxError: expected expression, got '<'
+JavaScript error: http://localhost:3000/billboard.js, line 1: SyntaxError: expected expression, got '<'
+1590068104580	Marionette	INFO	Stopped listening on port 40295
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+1590068162285	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofilevzEJ1l"
+1590068162864	addons.webextension.doh-rollout@mozilla.org	WARN	Loading extension 'doh-rollout@mozilla.org': Reading manifest: Invalid extension permission: networkStatus
+1590068164512	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1590068164512	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1590068164512	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1590068164512	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1590068166476	Marionette	INFO	Listening on port 38781
+1590068166500	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: http://localhost:3000/billboard.js, line 1: SyntaxError: expected expression, got '<'
+JavaScript error: http://localhost:3000/billboard.js, line 1: SyntaxError: expected expression, got '<'
+1590068190475	Marionette	INFO	Stopped listening on port 38781
+1590068195601	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileXDLjT0"
+1590068196237	addons.webextension.doh-rollout@mozilla.org	WARN	Loading extension 'doh-rollout@mozilla.org': Reading manifest: Invalid extension permission: networkStatus
+1590068197715	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1590068197715	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1590068197715	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1590068197715	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1590068199941	Marionette	INFO	Listening on port 34663
+1590068200018	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: http://localhost:3000/billboard.js, line 1: SyntaxError: expected expression, got '<'
+1590068222266	Marionette	INFO	Stopped listening on port 34663
+1590068225593	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile03DoBY"
+1590068226288	addons.webextension.doh-rollout@mozilla.org	WARN	Loading extension 'doh-rollout@mozilla.org': Reading manifest: Invalid extension permission: networkStatus
+1590068227771	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1590068227772	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1590068227772	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1590068227772	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1590068229920	Marionette	INFO	Listening on port 34895
+1590068231484	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: http://localhost:3000/billboard.js, line 1: SyntaxError: expected expression, got '<'
+1590068241610	Marionette	INFO	Stopped listening on port 34895
+1590068247964	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile5ULIjg"
+1590068248565	addons.webextension.doh-rollout@mozilla.org	WARN	Loading extension 'doh-rollout@mozilla.org': Reading manifest: Invalid extension permission: networkStatus
+1590068250044	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1590068250045	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1590068250045	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1590068250045	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1590068252099	Marionette	INFO	Listening on port 44143
+1590068252182	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: http://localhost:3000/billboard.js, line 1: SyntaxError: expected expression, got '<'
+1590068263439	Marionette	INFO	Stopped listening on port 44143
+1590068268318	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile3vhF37"
+1590068268915	addons.webextension.doh-rollout@mozilla.org	WARN	Loading extension 'doh-rollout@mozilla.org': Reading manifest: Invalid extension permission: networkStatus
+1590068270431	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1590068270431	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1590068270431	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1590068270431	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1590068272625	Marionette	INFO	Listening on port 34023
+1590068272636	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: http://localhost:3000/billboard.js, line 1: SyntaxError: expected expression, got '<'
+JavaScript error: http://localhost:3000/billboard.js, line 1: SyntaxError: expected expression, got '<'
+1590068289291	Marionette	INFO	Stopped listening on port 34023
+1590068294657	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile53UWBJ"
+1590068295256	addons.webextension.doh-rollout@mozilla.org	WARN	Loading extension 'doh-rollout@mozilla.org': Reading manifest: Invalid extension permission: networkStatus
+1590068296850	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1590068296850	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1590068296850	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1590068296850	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1590068298973	Marionette	INFO	Listening on port 34457
+1590068299072	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: http://localhost:3000/billboard.js, line 1: SyntaxError: expected expression, got '<'
+JavaScript error: http://localhost:3000/billboard.js, line 1: SyntaxError: expected expression, got '<'
+JavaScript error: http://localhost:3000/billboard.js, line 1: SyntaxError: expected expression, got '<'
+JavaScript error: http://localhost:3000/billboard.js, line 1: SyntaxError: expected expression, got '<'
+JavaScript error: http://localhost:3000/billboard.js, line 1: SyntaxError: expected expression, got '<'
+1590068341100	Marionette	INFO	Stopped listening on port 34457
+JavaScript error: , line 0: UnknownError: The operation failed for reasons unrelated to the database itself and not covered by any other error code.
+1590068343138	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofilejqKlFv"
+1590068343768	addons.webextension.doh-rollout@mozilla.org	WARN	Loading extension 'doh-rollout@mozilla.org': Reading manifest: Invalid extension permission: networkStatus
+1590068345331	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1590068345331	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1590068345331	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1590068345331	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1590068347750	Marionette	INFO	Listening on port 39627
+1590068347858	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: http://localhost:3000/billboard.js, line 1: SyntaxError: expected expression, got '<'
+JavaScript error: http://localhost:3000/billboard.js, line 1: SyntaxError: expected expression, got '<'
+JavaScript error: http://localhost:3000/view/billboard.js, line 1: SyntaxError: expected expression, got '<'
+JavaScript error: http://localhost:3000/view/billboard.js, line 1: SyntaxError: expected expression, got '<'
+1590068372217	Marionette	INFO	Stopped listening on port 39627
+1590068375466	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofilebiRjCX"
+1590068376081	addons.webextension.doh-rollout@mozilla.org	WARN	Loading extension 'doh-rollout@mozilla.org': Reading manifest: Invalid extension permission: networkStatus
+1590068377728	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1590068377728	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1590068377729	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1590068377729	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1590068379874	Marionette	INFO	Listening on port 42673
+1590068379881	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: http://localhost:3000/billboard.js, line 1: SyntaxError: expected expression, got '<'
+JavaScript error: http://localhost:3000/billboard.js, line 1: SyntaxError: expected expression, got '<'
+JavaScript error: http://localhost:3000/plot/billboard.js, line 1: SyntaxError: expected expression, got '<'
+JavaScript error: http://localhost:3000/plot/billboard.js, line 1: SyntaxError: expected expression, got '<'
+1590068418114	Marionette	INFO	Stopped listening on port 42673
+1590068422548	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofilet6iNIl"
+1590068423174	addons.webextension.doh-rollout@mozilla.org	WARN	Loading extension 'doh-rollout@mozilla.org': Reading manifest: Invalid extension permission: networkStatus
+1590068424676	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1590068424677	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1590068424677	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1590068424677	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1590068427053	Marionette	INFO	Listening on port 38181
+1590068427114	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: http://localhost:3000/billboard.js, line 1: SyntaxError: expected expression, got '<'
+JavaScript error: http://localhost:3000/billboard.js, line 1: SyntaxError: expected expression, got '<'
+JavaScript error: http://localhost:3000/train/billboard.js, line 1: SyntaxError: expected expression, got '<'
+JavaScript error: http://localhost:3000/predict/billboard.js, line 1: SyntaxError: expected expression, got '<'
+JavaScript error: http://localhost:3000/predict/billboard.js, line 1: SyntaxError: expected expression, got '<'
+1590068477018	Marionette	INFO	Stopped listening on port 38181
+JavaScript error: , line 0: UnknownError: The operation failed for reasons unrelated to the database itself and not covered by any other error code.
+1590068479774	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileLwwuXK"
+1590068480391	addons.webextension.doh-rollout@mozilla.org	WARN	Loading extension 'doh-rollout@mozilla.org': Reading manifest: Invalid extension permission: networkStatus
+1590068481798	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1590068481798	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1590068481798	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1590068481798	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1590068483856	Marionette	INFO	Listening on port 34045
+1590068483905	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: http://localhost:3000/billboard.js, line 1: SyntaxError: expected expression, got '<'
+JavaScript error: http://localhost:3000/billboard.js, line 1: SyntaxError: expected expression, got '<'
+1590068510602	Marionette	INFO	Stopped listening on port 34045
